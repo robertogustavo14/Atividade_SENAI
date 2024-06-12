@@ -1,0 +1,23 @@
+Algoritmo "Exercício 9"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 27/10/2020
+Var
+// Seção de Declarações das variáveis 
+num:vetor [1..100] de real
+x,y,i:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+i<-1
+repita
+escreval ("Digite x")
+leia(x)
+escreval ("Digite y")
+leia (y)
+num[i]<-x*y
+escreval("resultado:",num[i])
+i<-i+1
+ate (num[100] <> 0)
+Fimalgoritmo

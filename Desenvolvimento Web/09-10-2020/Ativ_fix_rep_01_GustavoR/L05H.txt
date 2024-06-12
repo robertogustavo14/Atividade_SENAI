@@ -1,0 +1,28 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 09/10/2020
+Var
+base,expoente,cont,res:inteiro
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Digite o valor da base")
+leia (base)
+escreval ("Digite o valor do expoente")
+leia (expoente)
+res<-1
+
+enquanto (cont<expoente)faca
+para cont de 1 ate expoente faca
+res<-res*base
+cont<-cont+1
+fimpara
+fimenquanto
+escreval (res)
+
+Fimalgoritmo

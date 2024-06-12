@@ -1,0 +1,27 @@
+Algoritmo "inserir na lista"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 17/11/2020
+procedimento inserir
+var
+   AUX:inteiro
+inicio
+      escreval("Digite um valor para o elemento")
+      leia(aux.valor)
+      se lista.tamanho > 0 entao
+         aux.proximo := lista.primeiro
+      fimse
+      lista.primeiro := aux
+      lista.tamanho := lista.tamanho +1
+fimprocedimento
+Var
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+inserir
+
+Fimalgoritmo

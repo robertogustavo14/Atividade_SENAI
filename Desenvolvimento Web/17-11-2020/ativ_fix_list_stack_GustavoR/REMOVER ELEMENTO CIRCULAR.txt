@@ -1,0 +1,54 @@
+Algoritmo "remover elemento circular"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 17/11/2020
+procedimento remover
+var
+   aux;nodo
+   i:inteiro
+   inicio
+         se lista.tamanho=0 entao
+         escreval("Lista vazia")
+         senao
+         se lista.primeiro=lista.primeiro.proximo
+         lista.primeiro.anterior=lista.ultimo
+         lista.ultimo.proximo=lista.primeiro
+         lista.tamanho=lista.tamanho - 1
+         
+         
+        senao
+        
+         se lista.ultimo.valor=valor entao
+            lista.ultimo=lista.ultimo.anterior
+            lista.ultimo.proximo=lista.primeiro
+            lista.primeiro.proximo=lista.ultimo
+            lista.quantidade=lista.quantidade - 1
+
+            senao
+            aux=lista.primeiro
+            para i de 2 ate lista.quantidade -1 passo 1 faca
+                 aux=aux.proximo
+                 se(aux.valor=valor) entao
+                 aux.anterior.proximo = aux.anterior
+                 lista.quantidade=lista.quantidade -1
+                 fimse
+                 fimpara
+                 fimse
+                 fimse
+                 fimse
+fimprocedimento
+            
+         
+         
+
+Var
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+
+Fimalgoritmo

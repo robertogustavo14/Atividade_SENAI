@@ -1,0 +1,36 @@
+Algoritmo "04"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 11/11/2020
+procedimento ler
+inicio
+escreval("De o valor para raio:(cm)")
+leia(r)
+fimprocedimento
+funcao cubo(x:real):real
+var
+resu:real
+inicio
+resu<-(x^3)
+retorne resu
+fimfuncao
+Var
+// Seção de Declarações das variáveis 
+n,x,y,r,resu,resu1:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval("Volume da esfera:")
+ler
+resu<-4*3.14*cubo (r)/3
+escreval("Resultado: ",resu,"cm")
+escreval("")
+escreval("Equaçao: x3 + y3 + 2 ")
+escreval("De o valor de X")
+leia (x)
+escreval("De o valor de Y")
+leia (y)
+resu1<-cubo (x) + cubo (y) + 2
+escreval("resultado da equaçao:",resu1)
+Fimalgoritmo

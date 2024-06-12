@@ -1,0 +1,69 @@
+{
+  "id": "624567b8-e63c-45f1-a21c-2653e02f7ffa",
+  "version": "2.0",
+  "name": "teste 02",
+  "url": "https://www.regextester.com",
+  "tests": [{
+    "id": "3306deec-db2d-4fbd-adce-155f9bf071ed",
+    "name": "adicionando comentarios",
+    "commands": [{
+      "id": "ee74e1ca-caca-4fd7-82fe-ee18865fe240",
+      "comment": "",
+      "command": "open",
+      "target": "/93648",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddf0a91e-ec4c-4060-9691-ac126c5f72bf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x584",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a3e77f6-3547-4b6a-9227-4c36761496bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.autoExpand",
+      "targets": [
+        ["css=.autoExpand", "css:finder"],
+        ["xpath=//div[@id='forumDiv']/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "164fb119-0481-4fbe-ac72-4c58a0a32328",
+      "comment": "",
+      "command": "type",
+      "target": "css=.autoExpand",
+      "targets": [
+        ["css=.autoExpand", "css:finder"],
+        ["xpath=//div[@id='forumDiv']/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": "addicionando comentarios"
+    }, {
+      "id": "a7c0c23c-625c-4f09-a9e1-d0d1a0592fac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.forumPostButton",
+      "targets": [
+        ["css=.forumPostButton", "css:finder"],
+        ["xpath=//div[@id='forumDiv']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Post')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c2013551-a9f5-4b6f-9cad-fad77c9ac871",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3306deec-db2d-4fbd-adce-155f9bf071ed"]
+  }],
+  "urls": ["https://www.regextester.com/"],
+  "plugins": []
+}

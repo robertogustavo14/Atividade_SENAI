@@ -1,0 +1,30 @@
+Algoritmo "Exercício 6"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 27/10/2020
+Var
+// Seção de Declarações das variáveis 
+num:vetor [1..10] de inteiro
+i:inteiro
+soma:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+i<-1
+repita
+Escreval ("Digite o",i,"º valor ")
+leia (num[i])
+i<-i+1
+ate i>10
+i<-1
+repita
+se (num[i] mod 2 = 1) ou (num[i] = 1) entao
+soma<-soma+num[i]
+i<-i+1
+senao
+i<-i+1
+fimse
+ate i>10
+Escreval ("A soma dos valores impares é:",soma)
+Fimalgoritmo

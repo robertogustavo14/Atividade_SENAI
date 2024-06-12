@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+    <style>
+         * {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        table {
+            background-color:#b45e5e;
+            border: 1px solid black;
+
+        }
+
+        table td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Atividade 8</h1>
+
+    <table>
+        <tr>
+            <th>Código</th>
+            <th>Especificação</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+            <th>Calcular</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Cachorro Quente</td>
+            <td>R$ 4.00</td>
+            <td><input type="number" name="" placeholder="Digite a quantidade"  id="quant1"></td>
+            <td><input type="text" id="total1" value="Total"></td>
+            <td><button onclick="calcular1()">Calcular total</button></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>X-salada</td>
+            <td>R$ 4.50</td>
+            <td><input type="number" name="" placeholder="Digite a quantidade" id="quant2"></td>
+            <td><input type="text" name="" id="total2" value="Total:"></td>
+            <td><button onclick="calcular2()">Calcular total</button></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>X-Bacon</td>
+            <td>R$ 5.00</td>
+            <td><input type="number" name="" placeholder="Digite a quantidade" id="quant3"></td>
+            <td><input type="text" name="" id="total3" value="Total:"></td>
+            <td><button onclick="calcular3()">Calcular total</button></td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Torrada Simples</td>
+            <td>R$ 2.00</td>
+            <td><input type="number" name="" placeholder="Digite a quantidade" id="quant4"></td>
+            <td><input type="text" name="" id="total4" value="Total:"></td>
+                        <td><button onclick="calcular4()">Calcular total</button></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Refrigerante</td>
+            <td>R$ 1.50</td>
+            <td><input type="number" name="" placeholder="Digite a quantidade" id="quant5"></td>
+            <td><input type="text" name="" id="total5" value="Total"></td>
+                        <td><button onclick="calcular5()">Calcular total</button></td>
+        </tr>
+    </table>
+</body>
+
+
+
+
+
+<script>
+function calcular1(){
+const preco1 = 4
+var quant1 = parseInt( document.getElementById("quant1").value)
+
+var resu1 = quant1*preco1
+
+var txt = document.getElementById("total1")
+txt.value = (`Total: ${resu1}`)
+}
+    
+function calcular2(){
+const preco2 = 4.5
+var quant2 = parseInt( document.getElementById("quant2").value)
+
+var resu2 = quant2*preco2
+
+var txt = document.getElementById("total2")
+txt.value = (`Total: ${resu2}`)
+}
+
+function calcular3(){
+const preco3 = 5
+var quant3 = parseInt( document.getElementById("quant3").value)
+
+var resu3 = quant3*preco3
+
+var txt = document.getElementById("total3")
+txt.value = (`Total: ${resu3}`)
+}
+
+function calcular4(){
+const preco4 = 2
+var quant4 = parseInt( document.getElementById("quant4").value)
+
+var resu4 = quant4*preco4
+
+var txt = document.getElementById("total4")
+txt.value = (`Total: ${resu4}`)
+}
+
+function calcular5(){
+const preco5 = 1.5
+var quant5 = parseInt( document.getElementById("quant5").value)
+
+var resu5 = quant5*preco5
+
+var txt = document.getElementById("total5")
+txt.value = (`Total: ${resu5}`)
+}
+
+
+</script>
+</html>

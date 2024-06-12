@@ -1,0 +1,16 @@
+Algoritimo para trocar entre si os valores das variaveis.
+
+Iremos declarar as seguintes varaiveis:
+a,b,c,d:real
+
+Depois iremos requisitar ao usuarios dois valores:
+O valor da varivel A e o valor da variavel B.
+
+Agora iremos fazer algumas atribuições:
+
+c = a
+d = b
+a = d
+b = c
+
+Por fim, mostraremos o valor de saida de A e B.

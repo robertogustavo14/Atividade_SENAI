@@ -1,0 +1,14 @@
+Algoritmo "c"
+
+Var
+// Seção de Declarações das variáveis 
+cont1,cont2:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para cont1 de 1 ate 100 faca
+cont2<-cont2 + cont1
+escreval(cont2)
+fimpara
+
+Fimalgoritmo

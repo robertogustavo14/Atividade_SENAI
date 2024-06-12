@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema detran</title>
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        h1{background-color: #212121;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 3px;
+        font-size: 1.2rem;
+        
+    }
+        section{
+            margin: auto;
+            text-align: center;
+            background-color: #bebdc0;
+            border-radius: 3px;
+            width: 500px;
+            height: 500px;
+        }
+        input {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 1.5rem 2rem;
+        border-radius: 0.2rem;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        width: 300px;
+        display: block;
+        border-bottom: 0.3rem solid transparent;
+}
+button{
+    font-family: 'Roboto', sans-serif;
+        color: #333;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        margin-top: 10px;
+        border-radius: 0.2rem;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        width: 200px;
+        height: 50px;
+        display: block;
+}
+#butao:hover {
+    background-color: #333;
+    color:#ffffff ;
+}
+p{
+    font-size: 15pt;
+}
+
+    </style>
+</head>
+<body>
+    <section>
+    <h1>Calculo de velocidade</h1>
+    <input type="text" placeholder="Velocidade Permitida" id="vp">
+    <br>
+    <input type="text" placeholder="Velocidade do veiculo" id="vv">
+    <br>
+    <p id="txt">*Aguardando dados*</p>
+    <button onclick="calcular()" id="butao">Calcular infração</button>
+    </section>
+    <script>
+        function calcular(){
+            var vp = parseInt(document.getElementById("vp").value)
+            var vv = parseInt(document.getElementById("vv").value)
+            var txt = document.getElementById("txt")
+            vv = vv - 7
+            var por = vp/100
+            if (vv < por*120 && vv > por*100){
+                txt.innerHTML = ("Velocidade acima da permitida em 20% multa media (R$130,16)")
+
+            }
+            else if (vv >= por*120 && vv < por*150){
+                txt.innerHTML = ("Velocidade acima da permitida de 20% a 50% multa grave (R$195,23)")
+            }
+            else if (vv >= por*150){
+                txt.innerHTML = ("Velocidade acima da permitida em 50% multa gravissima (R$293,47)")
+            }
+            else{
+                txt.innerHTML = ("Velocidade permitida.Não a multa.")
+            }
+        }
+    </script>
+</body>
+</html>

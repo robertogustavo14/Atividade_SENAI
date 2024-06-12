@@ -1,0 +1,103 @@
+Algoritmo "ativ_fix_03_mod_Equipe_03"
+// Disciplina   : Lógica de Programação
+// Professor   : Cláudio Iwakami
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 16/11/2020
+tipo
+dia = registro
+   em, sm, et, st: inteiro
+fimregistro
+Var
+// Seção de Declarações das variáveis
+v1:vetor[1..31,1..8] de inteiro
+v2:vetor[1..31] de dia
+ Atm, TotalR :inteiro
+i:inteiro //variaveis para armazenar hr e min
+ 
+procedimento entrada
+var
+dia,i,me:inteiro
+ms:caracter
+
+inicio
+
+escreval("Digite o horario de entrada (HR) exemplo 15:30 digite 15")
+escreval("Digite o horario de entrada (min) exemplo 15:30 digite 30")
+
+repita
+escreval("Digite o dia de hoje (1 ate 31)")
+leia(me)
+escreval("Digite o horario de entrada da manha(HR)")
+leia(v1[me,1])
+escreval("Digite o horario de entrada da manha(min)")
+leia(v1[me,2])
+v2[me].em <- (v1[me,1]*60)+v1[me,2]
+escreval("Digite o horario de saida da manha(HR)")
+leia(v1[me,3])
+escreval("Digite o horario de saida da manha(min)")
+leia(v1[me,4])
+v2[me].sm <- (v1[me,3]*60)+v1[me,4]
+escreval("Digite o horario de entrada da tarde(HR)")
+leia(v1[me,5])
+escreval("Digite o horario de entrada da tarde(min)")
+leia(v1[me,6])
+v2[me].et <- (v1[me,5]*60)+v1[me,6]
+escreval("Digite o horario de saida da tarde(HR)")
+leia(v1[me,7])
+escreval("Digite o horario de saida da tarde(min)")
+leia(v1[me,8])
+v2[me].st <- (v1[me,7]*60)+v1[me,8]
+escreval("Deseja bater outro ponto?(sim)(nao)")
+leia(ms)
+se ms="nao" entao
+i<-1
+Fimse
+ate i=1
+fimprocedimento
+
+procedimento Calculo
+ Var
+ cont: inteiro
+ inicio
+ Para cont de 1 ate 31 faca
+ Atm <- Atm + ((V2[cont].Sm)-(V2[cont].Em)) + ((V2[cont].st)-(V2[cont].et))
+ // atm são os Minutos trabalhados
+ Fimpara
+ TotalR <- 480*31 - Atm
+fimprocedimento
+
+procedimento impressao
+inicio
+escreval("")
+   Escreval ("")
+   Escreval (" _____________________________________________")
+   Escreval ("| DIA:    |       Manhã     |       Tarde     |")
+   Escreval ("|         |_________________|_________________|")
+   Escreval ("|           ENTRADA | SAÍDA | ENTRADA | SAÍDA |")
+   para i de 1 ate 9 faca
+   Escreval (" _____________________________________________")
+   Escreval ("| ",i,"    |  ",v1[i,1],":",v1[i,2],"  |  ",v1[i,3],":",v1[i,4],"  |  ",v1[i,5],":",v1[i,6],"  | ",v1[i,7],":",v1[i,8]," |")
+   Escreval ("|_______|_________|_________|_________|_______|")
+   fimpara
+   para i de 10 ate 31 faca
+   Escreval (" _____________________________________________")
+   Escreval ("|",i,"    |  ",v1[i,1],":",v1[i,2],"  |  ",v1[i,3],":",v1[i,4],"  |  ",v1[i,5],":",v1[i,6],"  | ",v1[i,7],":",v1[i,8]," |")
+   Escreval ("|_______|_________|_________|_________|_______|")
+   fimpara
+   Escreval (" _____________________________________________")
+   escreval ("horas trabalhas",atm/60)
+   escreval ("Atraso em minutos",totalr)
+   fimprocedimento
+
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+entrada
+Calculo
+impressao
+
+
+
+Fimalgoritmo

@@ -1,0 +1,38 @@
+algoritmo "05"
+
+var
+
+   somaCa: inteiro
+   somaLa: inteiro
+   SC:vetor [1..5] de inteiro
+   SL:vetor [1..5] de inteiro
+   G:vetor [1..5, 1..5] de inteiro
+   j,i:inteiro
+
+inicio
+
+para i de 1 ate 5 passo 1 faca
+para j de 1 ate 5 passo 1 faca
+Escreval ("Insira os Dados: ")
+leia (G[i,j])
+fimpara
+fimpara  
+para i de 1 ate 5 passo 1 faca
+somaLa <- 0
+para j de 1 ate 5 passo 1 faca
+somaLa <- somaLa + G[i,j]
+fimpara
+SL[i] <- somaLa
+fimpara      
+para j de 1 ate 5 passo 1 faca
+somaCa <- 0
+para i de 1 ate 5 passo 1 faca
+somaCa <- somaCa + G[i,j]
+fimpara
+SC[j] <- somaCa
+fimpara
+   
+Escreval ("Soma das linhas 1,2,3,4 e 5: ", SL[1], SL[2], SL[3], SL[4], SL[5])
+Escreval ("Soma das colunas 1,2,3,4 e 5: ", SC[1], SC[2], SC[3], SC[4], SC[5])
+      
+fimalgoritmo

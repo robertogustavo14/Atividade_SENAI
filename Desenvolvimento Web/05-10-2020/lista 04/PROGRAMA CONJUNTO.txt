@@ -1,0 +1,22 @@
+Algoritmo "programa conjunto"
+// 
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 06/10/2020
+Var
+n1:real
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("O usuário deve digitar um número entre 5 e 15. Se o número não estiver nessa  faixa, deve ser exibida a mensagem “FORA DO CONJUNTO”, se o número atente à regra, mostre a  mensagem “PERTENCE AO CONJUNTO")
+escreva ("Por favor digite o numero desejado: ")
+leia (n1)
+se (n1>=5) e (n1<=15) entao
+escreval ("Esse numero pertece ao conjunto")
+senao
+escreval ("Esse numero não pertence ao conjunto")
+fimse
+Fimalgoritmo

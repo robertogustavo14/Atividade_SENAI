@@ -1,0 +1,22 @@
+Algoritmo "11"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 14/10/2020
+Var
+num,resu,temp,soma:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Quantos numeros voce deseja somar?")
+leia (num)
+temp<-1
+repita
+escreval ("Digite o numero a ser somado.")
+leia (soma)
+resu<-resu + soma
+temp<- temp+1
+ate temp>num
+escreval ("O valor da soma é",resu)
+
+Fimalgoritmo

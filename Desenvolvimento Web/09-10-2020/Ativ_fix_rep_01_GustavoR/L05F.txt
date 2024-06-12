@@ -1,0 +1,18 @@
+Algoritmo "f"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 09/10/2020
+Var
+cont1,cont2:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para cont1 de 1 ate 200 passo 1 faca
+se cont1 mod 4=0 entao
+cont2<-cont1
+escreval (cont2)
+fimse
+fimpara
+
+Fimalgoritmo

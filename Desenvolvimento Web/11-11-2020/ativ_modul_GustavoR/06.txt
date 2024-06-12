@@ -1,0 +1,19 @@
+Algoritmo "06"
+procedimento ler
+inicio
+escreval("De o valor de x")
+leia(x)
+escreval("De o valor de y")
+leia(y)
+fimprocedimento
+procedimento potencia
+inicio
+resu<-x^y
+fimprocedimento
+Var
+x,y,resu:real
+Inicio
+ler
+potencia
+escreval(x," ^",y," =",resu)
+Fimalgoritmo

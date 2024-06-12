@@ -1,0 +1,25 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 02/10/2020
+Var
+fabri,distri,impos,total:real
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("insira o valor de fabricação")
+leia (fabri)
+distri <- fabri*(28/100)
+impos <- fabri*(45/100)
+escreva ("valor do distribuidor: R$",distri)
+escreval
+escreva ("valor do imposto: R$",impos)
+total <- fabri+distri+impos
+escreval
+escreva ("valor total: R$",total)
+
+Fimalgoritmo

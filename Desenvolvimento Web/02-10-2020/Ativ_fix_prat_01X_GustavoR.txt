@@ -1,0 +1,27 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Claudio Iwakami
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Gustavo Roberto Da Silva
+// Data atual  : 02/10/2020
+Var
+temp,velo:real
+dista:real
+litros:real
+// Seção de Declarações das variáveis 
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Quanto tempo durou a viagem?(horas)")
+leia (temp)
+escreval ("Qual foi a velocidade media da viagem?(Km/h)")
+leia (velo)
+dista <- temp*velo
+litros<- dista/12
+escreva ("A velocidade media foi de" ,velo," Km/h ")
+escreval
+escreva ("O tempo gasto na viagem foi de ",temp,"h")
+escreval
+escreva ("A distancia percorrida foi de ",dista," Km")
+escreval
+escreva ("quantidades de litros gastos: ",litros)
+Fimalgoritmo

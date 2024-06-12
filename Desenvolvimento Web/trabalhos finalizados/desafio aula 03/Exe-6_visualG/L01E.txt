@@ -1,0 +1,24 @@
+Algoritmo "L01E"
+
+Var
+// Seção de Declarações das variáveis 
+prestacao:real
+valor_conta:real
+juros:real
+atraso:inteiro
+taxa:real
+
+Inicio
+Escreval ("Insira o valor da conta")
+leia (valor_conta)
+Escreval ("Insira o valor do taxa de atraso")
+leia(taxa)
+Escreval ("Insira o numero de dias em atraso")
+leia(atraso)
+juros <- (taxa/100)*valor_conta
+prestacao <- valor_conta + (juros * atraso)
+
+Escreva ("O valor das prestações será de: R$",prestacao)
+
+
+Fimalgoritmo

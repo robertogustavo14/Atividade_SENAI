@@ -1,0 +1,22 @@
+Algoritmo "L01C"
+
+Var
+altura:real
+raio:real
+volume:real
+_pi:real
+
+Inicio
+Escreval ("Insira a medida 'altura', da lata de oleo.")
+leia (altura)
+Escreval ("Escreva agora a medida do 'raio'.")
+leia (raio)
+
+_pi <- 3,14
+volume <- _pi*raio^2*altura
+
+Escreva ("O volume da lata de oleo é de:",volume)
+
+
+
+Fimalgoritmo

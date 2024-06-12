@@ -1,0 +1,22 @@
+Algoritmo "programa maior"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 05/10/2020
+Var
+n1,n2,resu:real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Nesse programa voce deve inserir dois valores e como resultado ele mostra o maior valor")
+escreval ("Por favor insira o primeiro valor: ")
+leia (n1)
+escreval ("Por favor insira o segundo valor: ")
+leia (n2)
+se (n1>n2) entao
+escreval ("O maior valor e o primeiro!!! :", n1)
+senao
+escreval ("O maior valor é o segundo!!! :",n2)
+fimse
+Fimalgoritmo

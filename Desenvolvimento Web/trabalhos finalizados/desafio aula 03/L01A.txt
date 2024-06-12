@@ -1,0 +1,16 @@
+Algoritmo "L01A"
+
+Var
+c:real
+f:real
+
+
+
+Inicio
+Escreva ("Coloque a temperatura em graus celsius: ")
+leia (c)
+F <- (9 * C + 160) / 5
+Escreva ("A temperatura em Fahrenheint é de:",f,"ºF")
+
+
+Fimalgoritmo

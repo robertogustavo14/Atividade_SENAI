@@ -1,0 +1,26 @@
+Algoritmo "Exercício 11"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 27/10/2020
+Var
+// Seção de Declarações das variáveis 
+divi:vetor [1..1000] de inteiro
+x,i,v:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval("Digite um numero para saber seus divisores:")
+leia(x)
+i<-x
+v<-1
+repita
+se (x mod i = 0) entao
+divi[v]<-i
+escreval(x," é divisivel por",divi[v])
+v<-v+1
+fimse
+i<-i-1
+ate i=0
+
+Fimalgoritmo

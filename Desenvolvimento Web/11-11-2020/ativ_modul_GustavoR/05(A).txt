@@ -1,0 +1,17 @@
+Algoritmo "05(a)"
+procedimento ler
+inicio
+escreval("De o valor para ser obtido ao cubo")
+leia(r)
+fimprocedimento
+funcao cubo(x:real):real
+inicio
+r<-(x^3)
+retorne r
+fimfuncao
+Var
+r:real
+Inicio
+ler
+escreval("Resultado: ",cubo (r))
+Fimalgoritmo

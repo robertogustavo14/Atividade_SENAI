@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade salario</title>
+</head>
+<body>
+    <h1>Digite seu salario</h1>
+    <input type="number" id="sala" onchange="calcular()">
+    <p id="resp"></p>
+    <script>
+    function calcular() {
+     var sala = parseFloat(document.getElementById("sala").value)
+     var resp = document.getElementById("resp")
+    if(sala <= 1100){
+        var sub = (sala/100)*7.5
+        var resu = sala-sub*2 
+        resp.innerHTML = `O seu salario liquido é: R$ ${resu} `}
+    else if( sala>1100 && sala <= 2203){
+        var sub = (sala/100)*9
+        var resu = sala-sub*2 
+        resp.innerHTML = `O seu salario liquido é: R$ ${resu} ` 
+    }
+    else if( sala>2203 && sala <= 3305){
+        var sub = (sala/100)*12
+        var resu = sala-sub*2 
+        resp.innerHTML = `O seu salario liquido é: R$ ${resu} ` 
+    }
+    else if( sala>3305){
+        var sub = (sala/100)*14
+        var resu = sala-sub*2 
+        resp.innerHTML = `O seu salario liquido é: R$ ${resu} ` 
+    }
+
+        
+    }
+    </script>
+</body>
+</html>

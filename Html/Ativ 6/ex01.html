@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+<body leftmargin="30%" rightmargin="20%">
+    <h1>Formulario HTML</h1>
+    <form action="enviar.script" method="POST">
+        <fieldset>
+            <legend> Digite seus dados</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            <br> <br>
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu E-mail">
+            <br> <br>
+            <label for="numero">Telefone:</label>
+            <input type="number" id="numero" name="numero" placeholder="Digite seu Telefone">
+            <br> <br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha(MAX.40 caracteres)">
+            <br> <br>
+            <label for="data">Data de Nascimento:</label>
+            <input type="date" id="data" name="data">
+            <br> <br>
+            <label for="generos">Gênero Musical Favorito:</label>
+            <br>
+            
+            <input type="checkbox" id="axe" name="axe">
+            <label for="axe">Axé</label>
+            <br>
+            <input type="checkbox" id="Pop" name="Pop">
+            <label for="Pop">Pop</label>
+            <br>
+            <input type="checkbox" id="celta" name="celta">
+            <label for="celta">Celta</label>
+            <br>
+            <input type="checkbox" id="Rock" name="Rock">
+            <label for="Rock">Rock</label>
+            <br>
+            <input type="checkbox" id="Samba" name="Samba">
+            <label for="Samba">Samba</label>
+            <br>
+            <input type="checkbox" id="Pagode" name="Pagode">
+            <label for="Pagode">Pagode</label>
+            <br>
+            <input type="checkbox" id="Sertanejo" name="Sertanejo">
+            <label for="Sertanejo">Sertanejo</label>
+            <br>
+            <input type="checkbox" id="Eletronica" name="Eletronica">
+            <label for="Eletronica">Eletronica</label>
+            <br> <br>
+            <label for="enquete">Receber notícias por E-mail:</label>
+
+            <input type="radio" id="SIM" name="en">
+            <label for="en"> SIM</label>
+            <input type="radio" id="NAO" name="en">
+            <label for="en">NÃO</label>
+            <br>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado" aria-placeholder="selecione">
+                <option value=""> --Selecione--</option>
+                <optgroup label="Norte">
+                    <option value="amazonas">Amazonas</option>
+                    <option value="para">Pará</option>
+                    <option value="acre">Acre</option>
+                </optgroup>
+
+                <optgroup label="Sudeste">
+                    <option value="minas gerais">Minas Gerais</option>
+                    <option value="sao paulo">São Paulo</option>
+                    <option value="rio de janeiro">Rio de Janeiro</option>
+                </optgroup>
+
+           
+            
+            </select>
+            <br> <br>
+            <label  for="comentarios" >Comentário:</label>
+            <textarea name="" id="comentarios" cols="30" rows="10"></textarea>
+            <br> <br>
+            <input type="submit">
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Salvar">               
+            <button>
+                <img src="https://drive.google.com/thumbnail?id=1ALWLJqVQVQnhC17QVGbGDT66L4zjaZRV&authuser=1&sz=w1600-h757" alt="andando" width="50px">
+            </button>
+        </fieldset>
+    </form>
+</body>
+</html>

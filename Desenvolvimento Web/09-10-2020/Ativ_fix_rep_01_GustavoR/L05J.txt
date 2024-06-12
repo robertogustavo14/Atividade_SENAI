@@ -1,0 +1,18 @@
+Algoritmo "j"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 10/10/2020
+Var
+c,temp:inteiro
+f:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ escreval ("Os valores de °C para °F e de 10 a 100.")
+ para c de 10 ate 100 passo 10 faca
+ f<-(9*c+160)/5
+ escreval ("°C:",c," = ","°F:",f)
+ fimpara
+
+Fimalgoritmo

@@ -1,0 +1,31 @@
+Algoritmo "buscar elemento da lista"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 17/11/2020
+procedimento listardoinicioaofim
+var
+   aux:nodo
+   i:inteiro
+inicio
+      se lista.tamanho>0 entao
+         aux:= lista.primeiro
+         para i de 2 ate lista.tamanho passo 1 faca
+              escreva(aux.valor,",")
+              aux:= aux.proximo
+         fimpara
+         escreva(aux.valor)
+      senao
+           escreval("Lista vazia")
+      fimse
+fimprocedimento
+Var
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+
+Fimalgoritmo

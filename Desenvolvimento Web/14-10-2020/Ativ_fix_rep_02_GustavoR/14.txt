@@ -1,0 +1,20 @@
+Algoritmo "14"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 14/10/2020
+Var
+temp,resu,num:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+num<-0
+repita
+
+resu<-resu + num
+num<-num+2
+escreva(resu," + ",num," + ")
+ate (num=500)
+escreval (resu)
+
+Fimalgoritmo

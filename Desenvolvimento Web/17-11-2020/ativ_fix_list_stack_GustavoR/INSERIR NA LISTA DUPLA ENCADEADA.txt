@@ -1,0 +1,46 @@
+Algoritmo "inserir na lista dupla encadeada"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 17/11/2020
+procedimento inserirFInal
+var
+aux;nodo
+inicio
+      escreval("Digite um valor para o elemento")
+      leia(aux.valor)
+      se lista.tamanho=0 entao
+         lista.primeiro:=aux
+      senao
+           lista.ultimo.proximo:=aux
+           aux.anterior :=lista.ultimo
+      fimse
+      lista.ultimo:=aux
+lista.tamanho:=lista.tamanho +1
+fimprocedimento
+procedimento listarDoinicioaofim
+var
+au:nodo
+i:inteiro
+inicio
+      se lista.tamanho>0 entao
+         aux:= lista.primeiro
+         para i de 2 ate lista.tamanho passo 1 faca
+              escreva(aux.valor,",")
+              aux:=aux.proximo
+         fimpra
+         escreva(aux.valor)
+      senao
+      escreval("Lista vazia")
+      fimse
+fimprocedimento
+Var
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+
+Fimalgoritmo

@@ -1,0 +1,50 @@
+Registrando na máquina:
+
+git config --global user.name "seuLoginDoGitHub"  - Se identificando com o login do gitHub
+
+git config --global user.email "seuEmail@domingio"  - Se identificando com o login do gitHub
+
+Início
+
+git init  - Iniciando o git naquele diretório. Uma pasta oculta 
+	    com configurações do git é criado na raiz daquele diretório.
+git clone url  - clona o repositório do gitHub
+
+Visualizando:
+
+git status  - visualiza o status (estado) dos arquivos 
+git log  - visualiza os commits realizados
+
+Salvando versões:
+
+git add nomeDoArquivo  - adiciona o arquivo para o estado "pronto para commit"       
+git add .  - . (ponto) para todos os arquivos 
+git commit -m "first commit"   - o commit é o momento em que "tiramos uma foto do projeto" salvando uma versão. 
+
+Restaurando alterações:
+
+git restore arquivo                        - Desfaz alterações em um arquivo que ainda não teve commit 
+git restore --staged arquivo        - restaura o modo staged para modified
+
+Desfazendo commit:
+
+--soft : exclui o commit e deixa as alterações no modo staged
+--mixed : exclui o commit e deixa as alterações no modo modified
+--hard : exclui o commit e as alterações 
+
+Sobre branchs:
+
+git branch  - visualiza as branchs existentes
+git branch nome_da_nova_branch  - cria uma nova branch
+git checkout nome_branch  - vai para a branch escolhida
+git checkout -B nova_branch  - cria uma branch e muda para ela
+git branch -D nome_branch  - exclui a branch
+git branch -M novo-nome  -Muda o nome da branch em que você está		
+
+Merge
+git merge nome_da_branch                   - inclui a merge na branch master (obs. Precisa estar na branch master )
+
+Upando para 
+
+git remote add origin (link do repositório)  - cadastrando seu repositório local para o público
+git push -u origin (nome da branch)  - upando

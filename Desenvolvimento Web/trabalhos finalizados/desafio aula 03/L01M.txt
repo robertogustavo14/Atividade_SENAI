@@ -1,0 +1,16 @@
+
+Var
+a,b,c,resu1,resu:real
+// Seção de Declarações das variáveis 
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+Escreva ("Insira o primeiro valor: ")
+leia (a)
+Escreva ("Insira o segundo valor: ")
+leia (b)
+Escreva ("Insira o terceiro valor: ")
+leia (c)
+resu<-(a)+(b)+(c)
+resu1<-resu*resu
+escreva ("A quadrado da soma dos tres valores é:",resu1)
+Fimalgoritmo

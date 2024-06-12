@@ -1,0 +1,17 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 02/10/2020
+Var
+contato01,contato02,contato03,contato04,contato05,contato06,contato07,contato08,contato09,contato10:caracter
+
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+
+Fimalgoritmo

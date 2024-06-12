@@ -1,0 +1,44 @@
+Algoritmo "01"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 11/11/2020
+procedimento ler
+inicio
+para i de 1 ate 5 faca
+escreval("Digite o valor para a ",i, " vetor S")
+leia(s[i])
+stop<-stop+1
+fimpara
+fimprocedimento
+
+procedimento mostrar
+inicio
+escreval("Mostrar quantas vezes?")
+leia (n)
+repita
+para i de 1 ate 5 faca
+escreval(s[i])
+fimpara
+escreval("")
+stop<-stop+1
+ate stop>n
+fimprocedimento
+
+
+Var
+// Seção de Declarações das variáveis
+s:vetor [1..5] de inteiro
+n:inteiro
+stop:inteiro
+i:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+stop<-1
+ler
+stop<-1
+mostrar
+
+
+Fimalgoritmo

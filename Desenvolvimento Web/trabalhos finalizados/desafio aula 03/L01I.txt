@@ -1,0 +1,14 @@
+
+Var
+A,B,dif:inteiro
+// Seção de Declarações das variáveis 
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+Escreva ("Digite o primeiro valor: ")
+leia (A)
+Escreva ("digite o segundo valor: ")
+leia (B)
+dif<-B-A
+Escreval ("A diferença entre os dois valores é: ",dif)
+
+Fimalgoritmo

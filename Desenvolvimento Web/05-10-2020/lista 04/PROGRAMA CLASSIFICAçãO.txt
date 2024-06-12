@@ -1,0 +1,32 @@
+Algoritmo "Programa classificação"
+//  
+//  
+// 
+//  
+// Descrição   : O usuário digita os pontos obtidos numa prova e o programa classifica de  acordo com o seguinte padrão: 0 a 30 – REGULAR, 31 a 60 – BOM, 61 a 90 – MUITO BOM, 91 a 100 –  ÓTIMO. Se o valor digitado não pertencer a esta faixa de pontuação, a mensagem “PONTUACAO INVÁLIDA”  deve ser exibida.
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 06/10/2020
+Var
+not:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Esse programa vai fazer uma classificaçao da sua nota (0 a 100)")
+leia (not)
+se (not >=0) e (not<=30) entao
+escreval ("sua nota e REGULAR")
+SENAO
+se (not >=31) e (not<=60) entao
+escreval ("sua nota é BOA")
+senao
+se (not >=61) e (not<=90) entao
+escreval ("sua nota é MUITO BOA")
+senao
+se (not >=91) e (not<=100) entao
+escreval ("sua nota é OTIMA")
+senao
+escreval ("Pontuaçao invalida")
+fimse
+fimse
+fimse
+fimse
+Fimalgoritmo

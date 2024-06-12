@@ -1,0 +1,33 @@
+Algoritmo "2"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 28/10/2020
+Var
+// Seção de Declarações das variáveis 
+a,b:vetor [1..20] de inteiro
+i:inteiro
+pri,seg,tro:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval("Insira os 20 numeros negativos: ")
+para i de 1 ate 20 faca
+escreval ("Insira o ",i," numero:")
+leia (a[i])
+b[i]<-a[i]*-1
+fimpara
+para pri de 1 ate 20 faca
+para seg de pri+1 ate 20 faca
+se b[pri]<b[seg] entao
+tro<-b[pri]
+b[pri]<-b[seg]
+b[seg]<-tro
+fimse
+fimpara
+fimpara
+escreval ("Os numeros em ordem decrescente sao:")
+para i de 1 ate 20 faca
+escreval (b[i])
+fimpara
+Fimalgoritmo

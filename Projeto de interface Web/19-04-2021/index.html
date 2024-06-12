@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+    .fundo{
+        background-color: black;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+    <h1 id="para">Utilizando setAttribute</h1>
+    <button type="button" class="btn btn-primary" id="clique" >Adicionar</button>
+    <button type="button" class="btn btn-primary" id="cor">Ver cor</button>
+    
+    <script>
+        var trocar = true
+
+        document.querySelector("#clique").addEventListener("click", function mudar() {
+        if (trocar == true){
+            
+            document.querySelector("#para").setAttribute("style","background-color: black; color:white;")
+            document.querySelector("#clique").innerHTML = "Remover"
+            trocar = false
+            
+        }
+        
+        else if(trocar == false) {
+            document.querySelector("#para").removeAttribute("style")
+            document.querySelector("#clique").innerHTML = "Adicionar"
+            trocar = true
+            
+        }
+    })
+        document.querySelector("#cor").addEventListener("click",function mostrar() {
+            var teste = document.getElementById("para")
+            var cor = teste.getAttribute("style")
+            alert(cor)
+
+
+        })
+    
+    </script>
+</body>
+</html>

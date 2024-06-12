@@ -1,0 +1,22 @@
+Algoritmo "Programa Conjunto"
+
+Var
+// Seção de Declarações das variáveis 
+x:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Algoritimo de comparação")
+escreval
+escreva ("Escreva um numero: ")
+leia (x)
+se (x > 5) entao
+   se (x < 15) entao
+   escreva ("Percente ao Conjunto")
+   fimse
+senao
+escreval ("Fora do conjunto")
+escreva ("Só será aceito numeros entre 5 e 15")
+fimse
+
+Fimalgoritmo

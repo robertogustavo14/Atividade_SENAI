@@ -1,0 +1,30 @@
+Algoritmo "vetor03"
+
+Var
+cur:vetor [1..25] de caracter
+mens:vetor [1..25] de real
+i:inteiro
+barp:real
+barc:caracter
+soma,media:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+ i<-1
+ barp<-100000000000000000000000000
+repita
+escreval ("Por favor insira o nome do",i,"º curso.")
+leia (cur[i])
+escreval ("Por favor insira o valor da mensalidade")
+leia (mens[i])
+soma<-soma+mens[i]
+se mens[i]<barp entao
+barp<-mens[i]
+barc<-cur[i]
+fimse
+i<-i+1
+ate i>25
+media<-soma/25
+escreval("O curso mais barato da escola é ",barc," no valor dé: R$",barp)
+escreval("O valor da media é R$",media)
+escreval ("A diferença do valor mensalidade do curso mais barato em relação a mensalidade media é: R$",media-barp)
+Fimalgoritmo

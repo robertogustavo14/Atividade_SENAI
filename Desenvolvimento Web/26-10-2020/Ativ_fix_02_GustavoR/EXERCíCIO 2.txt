@@ -1,0 +1,37 @@
+Algoritmo "Exercício 2"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 26/10/2020
+Var
+// Seção de Declarações das variáveis 
+matri:vetor [1..10] de inteiro
+i:inteiro
+x:inteiro
+i2:inteiro
+regi:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+i<-1
+repita
+regi<-0
+i2<-1
+escreval ("digite o numero da matricula ",i)
+leia(x)
+repita
+se (x = matri[i2]) entao
+escreval ("Matricula ja registrada.")
+i2<-i2+10
+regi<-1
+i<-i-1
+senao
+i2<-i2+1
+fimse
+ate i2>10
+se regi= 0 entao
+matri[i]<-x
+fimse
+i<-i+1
+ate i>10
+Fimalgoritmo

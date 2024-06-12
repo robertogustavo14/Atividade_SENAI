@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":266:{a:2:{s:7:"defects";a:1:{s:39:"EmailTest::testTestarRetornoDaInstancia";i:3;}s:5:"times";a:3:{s:37:"EmailTest::testValidarTipoDaInstancia";d:0.009;s:39:"EmailTest::testTestarRetornoDaInstancia";d:0.003;s:47:"EmailTest::testRetornaExcecaoSeEmailForInvalido";d:0.001;}}}

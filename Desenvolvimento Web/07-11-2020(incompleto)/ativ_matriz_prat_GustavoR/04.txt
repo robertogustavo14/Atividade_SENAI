@@ -1,0 +1,30 @@
+algoritmo "04"
+var
+
+   matr:vetor [1..5, 1..5] de inteiro
+   x,j2,i3,i,j:inteiro
+
+inicio
+
+para i de 1 ate 5 passo 1 faca
+para j de 1 ate 5 passo 1 faca
+Escreva ("Insira os dados: ")
+leia(x)
+i2 <- 1
+j2 <- 1
+enquanto (i2 < 6)
+enquanto (j2 < 6)
+se (x = matr[i3,j2]) entao
+Escreval ("Matricula registrada, insira novamente: ")
+leia (x)
+j2 <- 1
+fimse
+            
+fimenquanto
+fimenquanto
+fimpara
+fimpara
+   
+
+
+fimalgoritmo

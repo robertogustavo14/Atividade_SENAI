@@ -1,0 +1,17 @@
+Algoritmo "2"
+
+Var
+temp:inteiro
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc.
+temp<-10
+repita
+escreval (temp)
+temp <- temp -1
+ate (temp<1)
+
+
+Fimalgoritmo

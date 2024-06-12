@@ -1,0 +1,19 @@
+Algoritmo "15"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 14/10/2020
+Var
+temp:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+temp<-0
+repita
+temp<-temp+1
+se (temp mod 2) =1 entao
+escreval (temp)
+senao
+fimse
+ate temp=20
+Fimalgoritmo

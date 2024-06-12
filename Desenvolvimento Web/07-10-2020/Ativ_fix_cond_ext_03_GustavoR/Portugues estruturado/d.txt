@@ -1,0 +1,20 @@
+Algoritmo "par ou impar"
+// Disciplina   : [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
+
+Var
+// Seção de Declarações das variáveis 
+n1,resu:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("O usuário digita um valor e o programa diz se ele é PAR ou IMPAR.")
+escreval ("Insira o valor por favor")
+leia (n1)
+resu<-(n1 mod (2))
+se (resu = 0) entao
+escreval ("O valor é par")
+senao
+escreval ("O valor é impar")
+ Fimse
+Fimalgoritmo

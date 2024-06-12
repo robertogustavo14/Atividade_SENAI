@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CSS JS</title>
+    <style>
+        h1{
+            color: black;
+            font-size: 18pt;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Clique no botão</h1>
+    <p id="paragrafo"></p>
+    <input type="button" value="Clique em mim" onclick="cliquei()">
+    <script>
+        function cliquei() {
+        var titulo = document.getElementById("titulo")
+        var img = document.createElement('img')
+        var res = document.getElementById("paragrafo")
+        img.setAttribute('id','foto')
+        titulo.innerHTML = "Voce clickou em mim S2"
+        document.querySelector("#titulo").style.color = "#fd6761"
+        document.querySelector("#titulo").style.fontSize = "50pt"
+        document.body.style.backgroundColor = "#f7c1be"
+        img.setAttribute('src','imagem.gif')
+        res.appendChild(img)
+        
+
+        }
+
+</script>
+</body>
+</html>

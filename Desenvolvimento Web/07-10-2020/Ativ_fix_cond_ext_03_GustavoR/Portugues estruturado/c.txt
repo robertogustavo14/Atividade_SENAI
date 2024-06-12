@@ -1,0 +1,32 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 07/10/2020
+Var
+num1,num2,num3,num4,res1,res2,res3,res4:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval ("Insira o 1 numero")
+leia (num1)
+escreval ("Insira o 2 numero")
+leia (num2)
+escreval ("Insira o 3 numero")
+leia (num3)
+escreval ("Insira o 4 numero")
+leia (num4)
+ res1<- num1^2
+ res2<- num2^2
+ res3<- num3^2
+ res4<- num4^2
+se (res3 >= 1000) entao
+escreval ("resultado 3 = ",res3)
+senao
+
+escreval ("Resultado 1 = ",res1)
+escreval ("Resultado 2 = ",res2)
+escreval ("Resultado 3 = ",res3)
+escreval ("Resultado 4 = ",res4)
+fimse
+Fimalgoritmo

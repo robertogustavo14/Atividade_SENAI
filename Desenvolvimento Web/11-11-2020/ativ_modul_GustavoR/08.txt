@@ -1,0 +1,33 @@
+Algoritmo "08"
+procedimento ler
+inicio
+para i de 1 ate 30 faca
+escreval("Digite o ",i," elemento do vetor A")
+leia(a[i])
+fimpara
+fimprocedimento
+
+procedimento metade
+inicio
+para i de 1 ate 30 faca
+a[i]<-a[i]/2
+fimpara
+fimprocedimento
+
+procedimento escrever
+inicio
+para i de 1 ate 30 faca
+escreval("metade do elemnento ",i," é",a[i])
+fimpara
+fimprocedimento
+Var
+// Seção de Declarações das variáveis 
+a:vetor [1..30] de real
+i:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ler
+metade
+escrever
+
+Fimalgoritmo

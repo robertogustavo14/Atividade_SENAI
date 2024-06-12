@@ -1,0 +1,37 @@
+Algoritmo "b"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 26/10/2020
+Var
+// Seção de Declarações das variáveis 
+a,b:vetor [1..8] de real
+i:inteiro
+pesq,proc:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+i<-1
+repita
+escreval ("Insira o",i,"º numero:")
+leia (a[i])
+b[i]<-a[i]*5
+i<-i+1
+ate i>8
+escreval("Qual o resultado voce deseja consultar:")
+leia(pesq)
+proc<-1
+i<-1
+enquanto (proc=1) e (i<8) faca
+se pesq=b[i] entao
+proc<-0
+senao
+i<-i+1
+fimse
+fimenquanto
+se proc=0 entao
+escreval ("O numero procurado esta na casa",i)
+senao
+escreval ("Resultado não encontrado.")
+fimse
+Fimalgoritmo

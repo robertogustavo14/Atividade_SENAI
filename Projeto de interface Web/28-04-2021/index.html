@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixação 16</title>
+</head>
+<body>
+    <h1>Selecione um chave</h1>
+    <button onclick="alocar(1)"> Adicionar chave 1</button> <br> <br>
+    <button onclick="alocar(2)"> Adicionar chave 2</button> <br> <br>
+    <button onclick="alocar(3)"> Adicionar chave 3</button> <br> <br>
+     <a href="pag2.html" ><button> Proxima pagina</button> </a>
+    <br> <br>
+    <script>
+        function alocar(valor){
+            localStorage.setItem("chave",valor)
+        }
+    </script>
+</body>
+</html>

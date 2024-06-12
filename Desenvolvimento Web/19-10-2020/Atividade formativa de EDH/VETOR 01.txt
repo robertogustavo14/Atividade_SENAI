@@ -1,0 +1,35 @@
+Algoritmo "Vetor 01"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Gustavo Roberto da silva
+// Data atual  : 19/10/2020
+Var
+// Seção de Declarações das variáveis
+num,temp,i:inteiro
+v:vetor [1..10] de real
+res:caracter
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Qual tabuada voce deseja? ")
+leia (num)
+temp<-1
+repita
+para i de 1 ate 10 faca
+v[i]<-num*temp
+temp<-temp+1
+fimpara
+ate(temp > 10)
+escreval ("Deseja ver todos os resultados? (sim)(nao)")
+leia (res)
+se res="sim" entao
+i<-1
+temp<-1
+repita
+escreval (num," x",temp," = ",v[i])
+i<-i+1
+temp<-temp+1
+ate i>10
+fimse
+
+Fimalgoritmo

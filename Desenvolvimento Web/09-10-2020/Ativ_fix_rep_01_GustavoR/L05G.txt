@@ -1,0 +1,20 @@
+Algoritmo "g"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 09/10/2020
+Var
+x,y:inteiro
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para x de 0 ate 15 faca
+y<-x*x*x
+escreval (y)
+fimpara
+
+
+Fimalgoritmo

@@ -1,0 +1,39 @@
+Algoritmo "Exercício 3"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 26/10/2020
+Var
+// Seção de Declarações das variáveis 
+x:inteiro
+num:vetor [1..999] de inteiro //Programa nao aguentou 999  variaveis
+pri,seg:inteiro
+tro,i:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+i<-1
+Escreval("Quantos numeros deseja inserir?")
+leia(x)
+repita
+escreval ("Digite o numero que deseja inserir")
+leia (num[i])
+i<-i+1
+ate i>x
+pri<-1
+seg<-1
+para pri de 1 ate x faca
+para seg de pri+1 ate x faca
+se num[pri]>num[seg] entao
+tro<-num[pri]
+num[pri]<-num[seg]
+num[seg]<-tro
+fimse
+fimpara
+fimpara
+i<-1
+repita
+escreval("O",i," numero na ordem crescente é: ",num[i])
+i<-i+1
+ate i>x
+Fimalgoritmo

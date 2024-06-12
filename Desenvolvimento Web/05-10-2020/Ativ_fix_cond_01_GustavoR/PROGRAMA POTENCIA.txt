@@ -1,0 +1,21 @@
+Algoritmo "programa potencia"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 05/10/2020
+Var
+n1,n2,resultado:real
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("O usuário informa dois valores e o programa exibe a potência do primeiro elevado ao segundo.")
+escreva ("insira o primeiro numero por favor: ")
+leia (n1)
+escreva ("insira o segundo numero por favor: ")
+leia (n2)
+resultado<-(n1)^(n2)
+escreva ("O resultado é: ",resultado)
+Fimalgoritmo

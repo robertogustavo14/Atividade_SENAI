@@ -1,0 +1,32 @@
+Algoritmo "programa CLASSIFICAÇÃO"
+
+Var
+// Seção de Declarações das variáveis 
+p:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+Escreva ("")
+leia (p)
+
+se (p > 0) e (p <=30) entao
+   escreva ("regular")
+senao
+   se (p >= 31) e (p <= 60) entao
+      escreva ("BOM")
+
+   senao
+        se ( p >=61) e (p <= 90) entao
+           escreva ("MUITO BOM")
+
+        senao
+             se (p >= 91) e (p <= 100) entao
+                escreva ("OTIMO")
+            senao
+                 escreva ("PONTUAÇÃO INVALIDA")
+
+fimse
+fimse
+fimse
+fimse
+
+Fimalgoritmo

@@ -1,0 +1,42 @@
+Algoritmo "03"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 07/11/2020
+Var
+// Seção de Declarações das variáveis 
+a:vetor [1..4,1..4] de inteiro
+i,j,soma:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para i de 1 ate 4 faca
+para j de 1 ate 4 faca
+escreval("Digite o valor para ser depositado na linha",i," e na coluna",j)
+leia(a[i,j])
+fimpara
+fimpara
+para i de 1 ate 2 faca
+para j de 1 ate 2 faca
+soma<-soma+a[i,j]
+fimpara
+fimpara
+escreval("a)",soma)
+soma<-0
+para i de 3 ate 4 faca
+para j de 3 ate 4 faca
+soma<-soma+a[i,j]
+fimpara
+fimpara
+escreval("b)",soma)
+
+soma<-0
+j<-1
+para i de 1 ate 4 faca
+enquanto j<4 faca
+soma<-soma+a[i,j]
+j<-j+1
+fimenquanto
+fimpara
+
+Fimalgoritmo

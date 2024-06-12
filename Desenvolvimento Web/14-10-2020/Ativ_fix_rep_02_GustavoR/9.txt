@@ -1,0 +1,28 @@
+Algoritmo "9"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 14/10/2020
+Var
+deci,qdeci:inteiro
+resu:caracter
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Escreva o numero em decimal")
+leia (deci)
+qdeci<-deci
+resu<- ""
+
+repita
+se (deci mod 2) = 0 entao
+resu<- "0" + resu
+senao
+resu<- "1" +resu
+fimse
+deci<- deci div 2
+ate deci=0
+escreval (qdeci," = ", resu)
+
+
+Fimalgoritmo

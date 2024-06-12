@@ -1,0 +1,21 @@
+Algoritmo "e"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 09/10/2020
+Var
+// Seção de Declarações das variáveis 
+cont1,cont2:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para cont1 de 0 ate 20 passo 1 faca
+se cont1 mod (2) = 1 entao
+cont2<-cont1
+escreval (cont2)
+
+
+fimse
+fimpara
+Fimalgoritmo

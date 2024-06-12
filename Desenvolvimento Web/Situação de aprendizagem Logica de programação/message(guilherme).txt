@@ -1,0 +1,330 @@
+algoritmo "SA01"
+// Função : Realizar o Controle escolar da Escola Técnica /SuperAção TI LTDA
+// Autor : Guilherme de Sena Lima Guimarães
+// Data : 22/10/2020
+Tipo
+Carac_real = registro
+Car:caractere
+Rea:Real
+In :Inteiro
+Fimregistro
+
+var
+// Seção de Declarações
+Menu: Vetor [1..20] de caractere
+// Processo seletivo :
+// Nome dos alunos
+Processo: Vetor [1..100,1..5] de Carac_real
+
+// Matricula :
+// Codigo da matricula do aluno
+Cod_Matr: Vetor [1..100] de Carac_real
+// Endereço do ALuno
+Endereoo: Vetor [1..100] de Caractere
+// Bairro Do Aluno
+Bairro: Vetor [1..100] de Caractere
+// Documento pessoal do aluno
+CPF: Vetor [1..100] de Carac_real
+// Nome do Pai do Aluno
+Nome_Pai: Vetor [1..100] de Caractere
+// Nome da Mãe do Aluno
+Nome_Mae: Vetor [1..100] de Caractere
+
+// Turma :
+// Turma Cadastrada
+Turma: Vetor [1..100] de Caractere
+//Periodo em que o aluno se encontra
+Periodo: Vetor [1..100] de Carac_real
+//Turno em que o aluno foi cadastrado
+Turno: Vetor [1..100] de Caractere
+
+// Docente:
+// Nome do Docente
+Docente: Vetor [1..20] de Caractere
+// Disciplina
+Disciplina: Vetor [1..20] de Caractere
+
+// Notas:
+// Notas Bimestrais dos Alunos
+Nota1: Vetor [1..100] de Carac_real
+Nota2: Vetor [1..100] de Carac_real
+Nota3: Vetor [1..100] de Carac_real
+Nota4: Vetor [1..100] de Carac_real
+// Média bimestral do Aluno
+Med_Bim: Vetor [1..100] de Carac_real
+// Média final do Aluno
+Med_Fin: Vetor [1..100] de Carac_real
+
+//Indices
+x: Inteiro
+Y: Inteiro
+Z: Inteiro
+A: Inteiro
+B: Inteiro
+C: Inteiro
+MEM: Caractere
+
+NOM: Caractere
+COM, FIN, MEI : Inteiro
+ACH: Logico
+
+inicio
+// Seção de Comandos
+      Menu[1] <- "Sim"
+      Menu[4] <- "Sim"
+            Enquanto (Menu[1] = "Sim") Faca
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                                    Menu                                      |")
+   Escreval ("|______________________________________________________________________________|")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Opções:                                                                 |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  Cadasatro                                                                   |")
+   Escreval ("|  Consultas                                                                   |")
+   Escreval ("|  Relatório                                                                   |")
+   Escreval ("|                                                                     Sair     |")
+   Escreval ("|______________________________________________________________________________|")
+       Leia (Menu[2])
+                 Se (Menu[2] = "Cadastro") entao
+       Limpatela
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                              Menu de Cadastro                                |")
+   Escreval ("|______________________________________________________________________________|")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Opções de Cadastro:                                                     |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  Processo Seletivo                                                           |")
+   Escreval ("|  Matrícula                                                                   |")
+   Escreval ("|  Turmas                                                                      |")
+   Escreval ("|  Alunos em Turmas                                                            |")
+   Escreval ("|  Docentes                                                                    |")
+   Escreval ("|  Notas                                                                       |")
+   Escreval ("|                                                                     Sair     |")
+   Escreval ("|______________________________________________________________________________|")
+            Leia (Menu[1])
+      Se (Menu[1] = "Processo Seletivo") entao
+      MEM <- "Sim"
+   Para MEM = "Sim" faca
+   Para X de 1 ate 100 Faca
+         Limpatela
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                   Menu de Cadastro Para o Processo seletivo                  |")
+   Escreval ("|______________________________________________________________________________|")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Informações Necessárias:                                                |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  Nome do Aluno                                                               |")
+   Escreval ("|  Data de Nascimento                                                          |")
+   Escreval ("|  Data da Prova                                                               |")
+   Escreval ("|  Curso                                                                       |")
+   Escreval ("|  Documento de Identidade                                                     |")
+   Escreval ("|                                                                     Sair     |")
+   Escreval ("|______________________________________________________________________________|")
+            Leia (Processo[X,1])
+            Leia (Processo[X,2])
+            Leia (Processo[X,3])
+            Leia (Processo[X,4])
+            Leia (Processo[X,5])
+     Limpatela
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                   Você deseja Cadastrar um novo candidato?                   |")
+   Escreval ("|______________________________________________________________________________|")
+            Leia (MEM)
+Fimpara
+   Limpatela
+
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                          Voltar para o menu inicial?                         |")
+   Escreval ("|______________________________________________________________________________|")
+Fimse
+            Leia (Menu[1])
+   Escolha (Menu[1])
+   caso "Não"
+Fimalgoritmo
+Fimescolha
+
+Limpatela
+      Senao
+Fimse
+      Se (Menu[3] = "Matricula") entao
+      Menu[4] <- "Sim"
+     Enquanto (Menu[4] = "sim") faca
+         Para X de 1 a 100 Faca
+
+         COM <- 1
+         FIN <- 100
+         ACH <- Falso
+      Limpatela
+
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                        Menu de Cadastro Para Matricula                       |")
+   Escreval ("|______________________________________________________________________________|")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Informações Necessárias:                                                |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  Nome do Aluno                                                               |")
+   Escreval ("|  Data de Nascimento                                                          |")
+   Escreval ("|  Código de Matrícula                                                         |")
+   Escreval ("|  Curso                                                                       |")
+   Escreval ("|  Endereço                                                                    |")
+   Escreval ("|  Bairro                                                                      |")
+   Escreval ("|  CPF                                                                         |")
+   Escreval ("|  Documento de Identidade                                                     |")
+   Escreval ("|  Nome da Mãe                                                                 |")
+   Escreval ("|  Nome do Pai                                                                 |")
+   Escreval ("|                                                                     Sair     |")
+   Escreval ("|______________________________________________________________________________|")
+            Leia (NOM)
+      Enquanto (COM <= FIN) e (ACHA = falso) faca
+               MEI <- (COM + FIN) div 2
+                   SE (NOM =
+
+
+
+
+
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                           Menu de Cadastro de Turma                          |")
+   Escreval ("|______________________________________________________________________________|")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Informações Necessárias:                                                |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  Turma                                                                       |")
+   Escreval ("|  Período                                                                     |")
+   Escreval ("|  Turno                                                                       |")
+   Escreval ("|                                                                     Sair     |")
+   Escreval ("|______________________________________________________________________________|")
+
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                      Menu de Cadastro de Alunos em Turmas                    |")
+   Escreval ("|______________________________________________________________________________|")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Informações Necessárias:                                                |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  Nome do Aluno                                                               |")
+   Escreval ("|  Código de Matrícula                                                         |")
+   Escreval ("|  Curso                                                                       |")
+   Escreval ("|  Turma                                                                       |")
+   Escreval ("|  Periodo                                                                     |")
+   Escreval ("|  Turno                                                                       |")
+   Escreval ("|                                                                     Sair     |")
+   Escreval ("|______________________________________________________________________________|")
+
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                         Menu de Cadastro de Docentes                         |")
+   Escreval ("|______________________________________________________________________________|")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Informações Necessárias:                                                |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  Nome do Docente                                                             |")
+   Escreval ("|  Disciplina                                                                  |")
+   Escreval ("|                                                                     Sair     |")
+   Escreval ("|______________________________________________________________________________|")
+
+
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                           Menu de Cadastro de Notas                          |")
+   Escreval ("|______________________________________________________________________________|")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Informações Necessárias:                                                |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  Nome do Aluno                                                               |")
+   Escreval ("|  Código de Matrícula                                                         |")
+   Escreval ("|  Curso                                                                       |")
+   Escreval ("|  Primeira Avaliação                                                          |")
+   Escreval ("|  Segunda Avaliação                                                           |")
+   Escreval ("|  Terceira Avaliação                                                          |")
+   Escreval ("|  Quarta Avaliação                                                            |")
+   Escreval ("|  Média Bimestral                                                             |")
+   Escreval ("|  Média Final                                                                 |")
+   Escreval ("|                                                                     Sair     |")
+   Escreval ("|______________________________________________________________________________|")
+
+
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                        Menu de Cadastro Para Matricula                       |")
+   Escreval ("|______________________________________________________________________________|")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Informações Necessárias:                                                |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  Nome do Aluno                                                               |")
+   Escreval ("|  Data de Nascimento                                                          |")
+   Escreval ("|  Código de Matrícula                                                         |")
+   Escreval ("|  Curso                                                                       |")
+   Escreval ("|  Endereço                                                                    |")
+   Escreval ("|  Bairro                                                                      |")
+   Escreval ("|  CPF                                                                         |")
+   Escreval ("|  Documento de Identidade                                                     |")
+   Escreval ("|  Nome da Mãe                                                                 |")
+   Escreval ("|  Nome do Pai                                                                 |")
+   Escreval ("|                                                                     Sair     |")
+   Escreval ("|______________________________________________________________________________|")
+
+
+                 Senao
+Fimse)
+                    Se (Menu[2] = "Consulta") entao
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                                Menu de Consulta                              |")
+   Escreval ("|______________________________________________________________________________|")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Consultas Possíveis                                                     |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  1- Processo Seletivo                                                        |")
+   Escreval ("|  2- Alunos Por Turma                                                         |")
+   Escreval ("|  3- Alunos Matriculados                                                      |")
+   Escreval ("|  4- Notas Por Aluno                                                          |")
+   Escreval ("|  5- Docentes                                                                 |")
+   Escreval ("|                                                                     Sair     |")
+   Escreval ("|______________________________________________________________________________|")
+
+
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                    Menu de Consulta do Processo seletivo                     |")
+   Escreval ("|______________________________________________________________________________|")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Informações Necessárias:                                                |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  Insira o nome do Aluno                                                      |")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Informações Sobre O Aluno:                                              |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  Data de Nascimento                                                          |")
+   Escreval ("|  Data da Prova                                                               |")
+   Escreval ("|  Curso                                                                       |")
+   Escreval ("|  Documento de Identidade                                                     |")
+   Escreval ("|                                                                     Sair     |")
+   Escreval ("|______________________________________________________________________________|")
+
+
+   Escreval (" ______________________________________________________________________________")
+   Escreval ("|                                                                              |")
+   Escreval ("|                      Menu de Consulta de Alunos Por turma                    |")
+   Escreval ("|______________________________________________________________________________|")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Informações Necessárias:                                                |")
+   Escreval ("|                                                                              |")
+   Escreval ("|  Insira a Turma                                                              |")
+   Escreval ("|                                                                              |")
+   Escreval ("|      Nome dos Alunos:                                                        |")
+   Escreval ("|                                                                     Sair     |")
+   Escreval ("|______________________________________________________________________________|")
+Fimse
+Fimse
+Fimse
+Fimalgoritmo
+
+

@@ -1,0 +1,69 @@
+Algoritmo "4"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 28/10/2020
+Var
+// Seção de Declarações das variáveis 
+a,b,c,d:vetor [1..15] de inteiro
+i:inteiro
+pri,seg,tro:inteiro
+fim,come,meio,pesq:inteiro
+acha:logico
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval("defina os valores para o vetor a")
+para i de 1 ate 15 faca
+ escreval ("digite o numero",i)
+ leia (a[i])
+fimpara
+
+escreval("defina os valores para o vetor b")
+para i de 1 ate 15 faca
+ escreval ("digite o numero",i)
+ leia (b[i])
+fimpara
+
+escreval("defina os valores para o vetor c")
+para i de 1 ate 15 faca
+ escreval ("digite o numero",i)
+ leia (c[i])
+fimpara
+para i de 1 ate 15 faca
+d[i]<-a[i]+b[i]+c[i]
+fimpara
+para pri de 1 ate 15 faca
+para seg de pri+1 ate 15 faca
+se d[pri]>d[seg] entao
+tro<-d[pri]
+d[pri]<-d[seg]
+d[seg]<-tro
+fimse
+fimpara
+fimpara
+ come<-1
+ fim<-15
+ escreval("Digite o numero que deseja buscar:")
+ leia(pesq)
+enquanto (come<fim) e (acha=falso) faca
+ meio<-(come+fim) div 2
+se (d[meio]=pesq) entao
+acha<-verdadeiro
+senao
+se (pesq<d[meio]) entao
+fim<-(meio-1)
+senao
+se (pesq>d[meio]) entao
+come<-(meio+1)
+fimse
+fimse
+fimse
+fimenquanto
+se acha=verdadeiro entao
+escreval("O resultado esta na posiçao D[",meio,"]")
+senao
+escreval("Resultado nao encontrado")
+fimse
+Fimalgoritmo

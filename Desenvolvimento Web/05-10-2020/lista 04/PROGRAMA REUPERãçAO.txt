@@ -1,0 +1,28 @@
+Algoritmo "programa reuperãçao"
+// 
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 06/10/2020
+Var
+notp,notr:real
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Esse programa mostra se o aluno esta aprovado ou não (media 7)")
+escreval ("Por favor insira a nota do aluno")
+leia (notp)
+se (notp >=7) entao
+escreval ("O aluno esta aprovado parabens !!!")
+senao
+escreval ("Voce foi reprovado,isso e uma pena mas ainda temos uma chance,quanto voce tirou na recuperaão?")
+leia (notr)
+se (notr >=5) entao
+escreval ("VOce foi APROVADO com recuperação")
+senao
+escreval ("Voce foi REPROVADO")
+fimse
+fimse
+Fimalgoritmo

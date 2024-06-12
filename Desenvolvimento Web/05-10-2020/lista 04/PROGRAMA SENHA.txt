@@ -1,0 +1,21 @@
+Algoritmo "Programa senha"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Claudio Iwakami
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Gustavo Roberto
+// Data atual  : 05/10/2020
+Var
+senha,usuario:caracter
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Boa tarde favor inserir as informaçoes de login")
+escreval ("Por favor insira o nome de usuario")
+leia (usuario)
+escreval ("Por favor insira a sua senha")
+leia (senha)
+se (usuario = "joao") e (senha = "1234") entao
+escreval ("Seja bem vindo senhor")
+senao
+escreval ("Acesso negado!!")
+ fimse
+Fimalgoritmo

@@ -1,0 +1,16 @@
+Algoritimo para calculo de prestação atrasada.
+
+Iremos declarar as seguintes variaveis:
+
+Prestação,valor_conta,juros,taxa:real
+atraso:inteiro
+
+Depois iremos requisitar ao usuario os seguintes valores:
+
+Valor da conta, taxa de atraso e dias de atraso.
+
+Após armazenas todos os valores, entraremos com duas formulas:
+juros <- (taxa/100)*valor_conta
+prestacao <- valor_conta + (juros * atraso)
+
+E por fim, Mostraremos o valor das prestações.

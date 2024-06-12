@@ -1,0 +1,58 @@
+Algoritmo "c"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 26/10/2020
+Var
+// Seção de Declarações das variáveis 
+a,b:vetor [1..15] de inteiro
+i:inteiro
+tro,pri,seg:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+i<-1
+repita
+escreval("Digite o ",i,"º numero:")
+leia (a[i])
+b[i]<-(a[i] div 2)
+i<-i+1
+ate i>15
+pri<-1
+seg<-1
+para pri de 1 ate 15 faca
+   para seg de pri+1 ate 15 faca
+   se a[pri]<a[seg] entao
+   tro<-a[pri]
+   a[pri]<-a[seg]
+   a[seg]<-tro
+   fimse
+   fimpara
+   fimpara
+   escreval ("Valores da matriz A em ordem decrecente:")
+   i<-1
+repita
+escreval (a[i])
+i<-i+1
+ate i>15
+
+pri<-1
+seg<-1
+para pri de 1 ate 15 faca
+   para seg de pri+1 ate 15 faca
+   se b[pri]>b[seg] entao
+   tro<-b[pri]
+   b[pri]<-b[seg]
+   b[seg]<-tro
+   fimse
+   fimpara
+   fimpara
+   escreval ("Valores da matriz B em ordem crecente:")
+   i<-1
+repita
+escreval (b[i])
+i<-i+1
+ate i>15
+
+Fimalgoritmo

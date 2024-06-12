@@ -1,0 +1,12 @@
+*Algorimo para calculo do volume de uma lata de oleo*
+
+Primeiro iremos declarar as variaveis
+altura, raio, volume, _pi:real
+
+iremos fazer uma requisição ao usuario, para que ele insira a medida da altura e raio, da lata de oleo.
+
+atribuiremos 3,14 a variavel _pi.
+e executaremos a formula de "volume"
+volume <- _pi*raio^2*altura
+
+E por fim, mostraremos o valor do volume como valor de saida.

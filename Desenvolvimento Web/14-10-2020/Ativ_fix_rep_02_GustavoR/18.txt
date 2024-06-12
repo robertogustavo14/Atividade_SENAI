@@ -1,0 +1,15 @@
+Algoritmo "18"
+Var
+num,temp:inteiro
+resu:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+Escreval("Escreva os dez valores numericos")
+repita
+leia(num)
+resu<-resu+num
+temp<-temp+1
+ate temp=10
+resu<-resu/10
+escreval ("A media dos valores é:",resu)
+Fimalgoritmo

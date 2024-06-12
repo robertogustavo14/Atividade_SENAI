@@ -1,0 +1,28 @@
+Algoritmo "19"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 14/10/2020
+Var
+num,limi,temp,resus:inteiro
+media:real
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+temp<-0
+escreval ("Quantos numeros voce deseja inserir?")
+leia(limi)
+escreval ("Insira os valores:")
+repita
+leia(num)
+resus<-resus+num
+temp<-temp+1
+ate temp=limi
+escreval ("O valor da somatoria é",resus)
+media<-resus/limi
+escreval ("O valor da media é",media)
+escreval ("Total de valor lidos é",limi)
+Fimalgoritmo

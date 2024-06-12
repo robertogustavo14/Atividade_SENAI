@@ -1,0 +1,23 @@
+Algoritmo "para"
+Var
+x,y,stop,resu,temp,:inteiro
+repi:caracter
+Inicio
+cronometro on
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+x<-1
+y<-1
+repi<-"sim"
+enquanto repi = "sim" faca
+stop<-stop+105
+para temp de 0 ate stop faca
+resu<-x+y
+escreval (x,"+",y,"=",resu)
+x<-y
+y<-resu
+fimpara
+escreval("Deseja ver mais 105 numeros? (sim)(nao)")
+leia (repi)
+fimenquanto
+cronometro off
+Fimalgoritmo

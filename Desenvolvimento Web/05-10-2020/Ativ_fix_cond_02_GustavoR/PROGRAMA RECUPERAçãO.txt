@@ -1,0 +1,35 @@
+Algoritmo "Programa Recuperação"
+
+Var
+// Seção de Declarações das variáveis 
+n1,n2,n3,n4,recu,m:real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Este programa calcula a situação de avaliações de um aluno.")
+escreval
+Escreva ("Nota da primeira avaliação: ")
+leia (n1)
+Escreva ("Nota da segunda avaliação: ")
+leia (n2)
+Escreva ("Nota da terceira avaliação: ")
+leia (n3)
+
+m <- (n1+n2+n3)/3
+
+
+se (m > 7)entao
+escreva ("APROVADO")
+senao
+escreva("Inserir nota de recuperação: ")
+leia(n4)
+recu <- n4 + m
+se (recu > 5) entao
+escreva ("APROVADO APÓS RECUPERAÇÃO")
+senao
+Escreva ("REPROVADO")
+fimse
+fimse
+
+
+Fimalgoritmo

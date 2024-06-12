@@ -1,0 +1,23 @@
+Algoritmo "10"
+
+procedimento ler
+inicio
+escreval("Qual o valor de x")
+leia(x)
+escreval("Qual o valor de Y")
+leia(y)
+fimprocedimento
+
+procedimento aumento
+inicio
+resu<-x*(Y/100)
+fimprocedimento
+Var
+// Seção de Declarações das variáveis 
+x,y,resu:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ler
+aumento
+escreval(resu)
+Fimalgoritmo

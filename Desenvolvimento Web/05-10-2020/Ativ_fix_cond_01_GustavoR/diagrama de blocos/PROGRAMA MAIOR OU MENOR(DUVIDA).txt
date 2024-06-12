@@ -1,0 +1,20 @@
+Algoritmo "maior ou menor"
+
+Var
+// Seção de Declarações das variáveis 
+n1,n2,n3,n4,n5,maior,menor:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("O usuário digita 5 valores inteiros. O programa informa qual o maior e qual o menor valor.")
+escreval ("DUVIDA")
+leia (n1)
+escreval ("Por favor escreva o 2º numero")
+leia (n2)
+escreval ("Por favor escreva o 3º numero")
+leia (n3)
+escreval ("Por favor escreva o 4º numero")
+leia (n4)
+escreval ("Por favor escreva o 5º numero")
+leia (n5)
+Fimalgoritmo

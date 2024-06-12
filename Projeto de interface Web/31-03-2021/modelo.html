@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estações do ano</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Estações do ano</h1>
+    </header>
+    <section>
+        <div>
+        </div>
+        <div id="foto">
+            <img id="imagem" src="" alt="" onmouseover="mensagem()" >
+            <p id="msg">Selecione a estação</p>
+        </div>
+        <div id="butao">
+        <input type="button" value="Inverno" id="inverno" onclick="inve()">
+        <input type="button" value="Primavera" id="primavera"  onclick="pri()">
+        <input type="button" value="Verão" id="verao" onclick="vera()">
+        <input type="button" value="Outono" id="outono" onclick="out()">
+    </div>
+    </section>
+    <footer>
+        <p>&copy: Feito por Gustavo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

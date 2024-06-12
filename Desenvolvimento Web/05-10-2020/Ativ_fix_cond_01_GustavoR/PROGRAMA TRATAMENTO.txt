@@ -1,0 +1,19 @@
+Algoritmo "programa tratamento"
+Var
+nome,sexo:caracter
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Boa tarde tarde,qual o seu nome?")
+leia (nome)
+escreval ("Qual o seu sexo?(m/f)")
+leia (sexo)
+se (sexo="M") ou (sexo="m") ENTAO
+escreval ("Prezado senhor ",nome)
+senao
+se (sexo= "f") ou (sexo= "F")entao
+escreval ("prezada senhora ",nome)
+senao
+escreval ("Prezado(a) senhor(a)",nome)
+fimse
+fimse
+Fimalgoritmo

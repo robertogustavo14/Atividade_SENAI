@@ -1,0 +1,65 @@
+Algoritmo "Ativ_EDH_Home_GustavoR"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 26/10/2020
+Var
+// Seção de Declarações das variáveis 
+nome,ende:vetor [1..6] de caracter
+cep,tele:vetor [1..6] de inteiro
+i:inteiro
+pri,seg:inteiro
+tro:caracter
+tro2:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+i<-1
+repita
+escreval ("Cadastre o nome da",i,"º pessoa")
+leia (nome[i])
+escreval ("Cadastre o endereço da",i,"º pessoa")
+leia (ende[i])
+escreval ("Cadastre o CEP da",i,"º pessoa")
+leia (cep[i])
+escreval ("Cadastre o Telefone da",i,"º pessoa")
+leia (tele[i])
+limpatela
+i<-i+1
+ate i>6
+pri<-1
+seg<-1
+para pri de 1 ate 6 faca
+para seg de pri+1 ate 6 faca
+   se nome[pri]>nome[seg] entao
+    tro<-nome[pri]
+    nome[pri]<-nome[seg]
+    nome[seg]<-tro
+    
+    tro<-ende[pri]
+    ende[pri]<-ende[seg]
+    ende[seg]<-tro
+    
+    tro2<-cep[pri]
+    cep[pri]<-cep[seg]
+    cep[seg]<-tro2
+    
+    tro2<-tele[pri]
+    tele[pri]<-tele[seg]
+    tele[seg]<-tro2
+    fimse
+    fimpara
+    fimpara
+Escreval ("Os dados em ordem alfabetica sao:")
+escreval ("")
+i<-1
+repita
+Escreval ("Dados de:",nome[i])
+escreval ("")
+Escreval ("ENDEREÇO: ",ende[i])
+Escreval ("CEP: ",cep[i])
+Escreval ("TELEFONE: ",tele[i])
+Escreval ("--------------------------------------------------------------")
+i<-i+1
+ate i>6
+Fimalgoritmo

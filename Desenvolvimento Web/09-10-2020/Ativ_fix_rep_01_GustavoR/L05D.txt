@@ -1,0 +1,15 @@
+Algoritmo "d"
+
+Var
+// Seção de Declarações das variáveis 
+resu:real
+cont:inteiro
+cont2,cont3:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para cont de 1 ate 500 passo 2 faca
+cont2<- cont2 + cont
+escreva (cont2)
+fimpara
+Fimalgoritmo

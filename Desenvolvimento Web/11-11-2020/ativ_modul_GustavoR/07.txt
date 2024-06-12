@@ -1,0 +1,24 @@
+Algoritmo "06"
+procedimento ler
+inicio
+escreval("De o valor de x")
+leia(x)
+escreval("De o valor de y")
+leia(y)
+fimprocedimento
+procedimento troca
+var
+tro:real
+inicio
+tro<-x
+x<-y
+y<-tro
+fimprocedimento
+Var
+x,y:real
+Inicio
+ler
+troca
+escreval("x=",x)
+escreval("y=",y)
+Fimalgoritmo

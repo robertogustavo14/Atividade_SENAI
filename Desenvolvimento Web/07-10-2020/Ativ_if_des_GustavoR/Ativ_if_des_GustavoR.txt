@@ -1,0 +1,21 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 07/10/2020
+Var
+valor,resto,coe,divi:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Esse programa vai exibir o coeficiente e o resto de uma divisao")
+escreval ("Escreva o numero")
+leia (valor)
+escreval ("Por qual numero voce devia dividir")
+leia (divi)
+resto<- valor % divi
+coe<- valor div divi
+escreval ("O valor do resto da divisao é:",resto)
+escreval ("O valor do coeficiente da divisao é:",coe)
+
+Fimalgoritmo

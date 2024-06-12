@@ -1,0 +1,35 @@
+Algoritmo "Ativ_fix_rep_02_desf_GustavoR"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 15/10/2020
+Var
+n,temp,limi,stop:inteiro
+conti:caracter
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc..
+escreval ("Vamos validar se um numero é primo ou nao. ")
+repita
+temp<-2
+repita
+escreval ("Por favor insira o numero. ")
+leia (n)
+limi<-n-1
+se (n mod temp =0) entao
+escreval ("Esse numero nao é primo.")
+stop<-1
+senao
+escreval ("Esse numero é primo.")
+stop<-1
+fimse
+temp<-temp+1
+ate stop=1
+escreval("Deseja continuar?(sim)(nao)")
+leia (conti)
+ate conti="nao"
+
+Fimalgoritmo

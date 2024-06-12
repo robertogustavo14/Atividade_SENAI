@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        img{
+            margin: 5px;
+            border: solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="lojas">
+    <h1>Fixação 12</h1>
+    <h1> Produtos</h1>
+    </div>
+
+
+
+    <script>
+        let produto = [ 
+        {id: "0",nome: "Pentium gold",img: "./img/pentium.jpg",preco: "R$ 538,53"},
+        {id: "1",nome: "Core i3",img: "./img/i3.jpg",preco: "R$ 749,00"},
+        {id: "2",nome: "Core i5",img: "./img/i5.jpg",preco: "R$ 1.199,00"},
+        {id: "3",nome: "Core i7",img: "./img/i7.jpg",preco: "R$ 2.319,00"},
+    ]
+    function carregar(){
+        let loja = document.querySelector("#lojas")
+        produto.forEach((i) => {
+            loja.innerHTML += `
+
+            <h1> ${i.nome}</h1>
+            <img src="${i.img}">
+            <p>preco: "${i.preco}"</p>
+            `
+        });
+        
+
+    }
+    carregar()
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+Algoritmo "Calculadora"
+Var
+num1,num2,resu:real
+ope:caracter
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Essa e nossa calculadora feita com SE")
+escreval ("Digite o primeiro numerador")
+leia (num1)
+escreval ("Digite o segundo numerador")
+leia (num2)
+escreval ("Qual sera a nossa operação? (+,-,*,/)")
+leia (ope)
+se (ope= "+") entao
+resu<-num1 + num2
+escreval ("O resultado de",num1," +",num2," é:",resu)
+senao
+se (ope= "-") entao
+resu<-num1 - num2
+escreval ("O resultado de",num1," -",num2," é:",resu)
+senao
+se (ope= "*") entao
+resu<- num1 * num2
+escreval ("O resultado de",num1," *",num2," é:",resu)
+senao
+se (ope= "/") entao
+resu<- num1 / num2
+escreval ("O resultado de",num1," /",num2," é:",resu)
+fimse
+fimse
+fimse
+fimse
+Fimalgoritmo

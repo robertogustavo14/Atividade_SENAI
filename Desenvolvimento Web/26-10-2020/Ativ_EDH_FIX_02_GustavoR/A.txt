@@ -1,0 +1,35 @@
+Algoritmo "a"
+
+Var
+// Seção de Declarações das variáveis 
+numeros:vetor [1..12] de real
+tro:real
+pri,seg,i:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+i<-1
+ repita
+ escreval("Escreva o ",i,"º numero:")
+ leia (numeros[i])
+ i<-i+1
+ ate i>12
+ pri<-1
+ seg<-1
+ para pri de 1 ate 12 faca
+   para seg de pri+1 ate 12 faca
+   se numeros[pri]<numeros[seg] entao
+   tro<-numeros[seg]
+   numeros[seg]<-numeros[pri]
+   numeros[pri]<-tro
+   fimse
+   fimpara
+   fimpara
+   i<-1
+ escreval("Os numeros em ordem decrescente sao:")
+ repita
+ escreval(numeros[i])
+ i<-i+1
+ ate i>12
+
+Fimalgoritmo

@@ -1,0 +1,202 @@
+{
+  "id": "624567b8-e63c-45f1-a21c-2653e02f7ffa",
+  "version": "2.0",
+  "name": "teste 02",
+  "url": "https://www.regextester.com/93648",
+  "tests": [{
+    "id": "3306deec-db2d-4fbd-adce-155f9bf071ed",
+    "name": "adicionando comentarios",
+    "commands": [{
+      "id": "ee74e1ca-caca-4fd7-82fe-ee18865fe240",
+      "comment": "",
+      "command": "open",
+      "target": "/93648",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddf0a91e-ec4c-4060-9691-ac126c5f72bf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x584",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a3e77f6-3547-4b6a-9227-4c36761496bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.autoExpand",
+      "targets": [
+        ["css=.autoExpand", "css:finder"],
+        ["xpath=//div[@id='forumDiv']/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "164fb119-0481-4fbe-ac72-4c58a0a32328",
+      "comment": "",
+      "command": "type",
+      "target": "css=.autoExpand",
+      "targets": [
+        ["css=.autoExpand", "css:finder"],
+        ["xpath=//div[@id='forumDiv']/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": "addicionando comentarios"
+    }, {
+      "id": "a7c0c23c-625c-4f09-a9e1-d0d1a0592fac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.forumPostButton",
+      "targets": [
+        ["css=.forumPostButton", "css:finder"],
+        ["xpath=//div[@id='forumDiv']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Post')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8efec7b1-512f-4bbc-aca7-499149060f7d",
+    "name": "formatando",
+    "commands": [{
+      "id": "5af5e2a7-39b1-4a5b-b622-8e8be663776a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.regextester.com/93648",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe7b057e-a262-4fd4-8538-4193cd9fc96a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x584",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61f4d396-83dd-43ec-bb83-34034156be3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.autoExpand",
+      "targets": [
+        ["css=.autoExpand", "css:finder"],
+        ["xpath=//div[@id='forumDiv']/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17fadc1d-f3b8-492e-9d30-aecc82f8df10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.autoExpand",
+      "targets": [
+        ["css=.autoExpand", "css:finder"],
+        ["xpath=//div[@id='forumDiv']/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f49916a5-cb2f-4389-9ebe-bb1548743667",
+      "comment": "",
+      "command": "type",
+      "target": "css=.autoExpand",
+      "targets": [
+        ["css=.autoExpand", "css:finder"],
+        ["xpath=//div[@id='forumDiv']/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": "formatandando comentario"
+    }, {
+      "id": "10eddfa9-4361-4914-a785-ee3ff7b5743f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Formatting",
+      "targets": [
+        ["linkText=Formatting", "linkText"],
+        ["css=.pull-right:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Formatting')]", "xpath:link"],
+        ["xpath=//div[@id='forumDiv']/span[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[12]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Formatting')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "24b68273-75a4-4e31-bd85-405537eca07d",
+    "name": "posting guidelines",
+    "commands": [{
+      "id": "69298715-0be4-475d-9d30-2ef63d31ca43",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.regextester.com/93648",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44f521ca-6077-4a49-bc4e-d7f4779a4e49",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x715",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "384012c0-9d2e-4509-92e6-033b9b8054eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.autoExpand",
+      "targets": [
+        ["css=.autoExpand", "css:finder"],
+        ["xpath=//div[@id='forumDiv']/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "753788f3-d773-4765-87c4-5f461f6b721c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.autoExpand",
+      "targets": [
+        ["css=.autoExpand", "css:finder"],
+        ["xpath=//div[@id='forumDiv']/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": "posting guidelines"
+    }, {
+      "id": "c45ae100-65a4-4e4d-b397-a0d16b386f4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-right:nth-child(4)",
+      "targets": [
+        ["css=.pull-right:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='forumDiv']/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Posting Guidelines')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c9e291e-8264-421e-8e64-ca813f63e780",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Posting Guidelines",
+      "targets": [
+        ["linkText=Posting Guidelines", "linkText"],
+        ["css=.pull-right:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Posting Guidelines')]", "xpath:link"],
+        ["xpath=//div[@id='forumDiv']/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[11]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Posting Guidelines')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c2013551-a9f5-4b6f-9cad-fad77c9ac871",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3306deec-db2d-4fbd-adce-155f9bf071ed"]
+  }],
+  "urls": ["https://www.regextester.com/"],
+  "plugins": []
+}

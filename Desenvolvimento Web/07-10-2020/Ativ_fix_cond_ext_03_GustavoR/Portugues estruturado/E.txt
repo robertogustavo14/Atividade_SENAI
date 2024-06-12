@@ -1,0 +1,30 @@
+Algoritmo "e"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 07/10/2020
+Var
+ indi:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval ("Escreva qual o indice de poluição: ")
+leia (indi)
+se (indi>=0.05) e (indi<=0.20) entao
+escreval ("O indice de poluiçao esta aceitaval.")
+senao
+se (indi>0.20) e (indi<0.4) entao
+escreval ("1º Grupo")
+escreval ("SUSPENDER SUAS ATIVIDADES")
+Senao
+se (indi>=0.4) e (indi<0.5) entao
+escreval ("1º Grupo e 2º Grupo")
+escreval ("SUSPENDER SUAS ATIVIDADES")
+senao
+se (indi>=0.5) entao
+escreval ("todos os grupos devem paralisarem suas atividades")
+fimse
+fimse
+fimse
+fimse
+Fimalgoritmo

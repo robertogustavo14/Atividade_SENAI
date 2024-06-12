@@ -1,0 +1,14 @@
+
+Var
+re,us,cota:real
+// Seção de Declarações das variáveis 
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+Escreva ("Qual o valor que deseja converter para real? US$")
+leia (us)
+Escreva ("Digite a cotaçao atual do real: ")
+leia (cota)
+re<-us/cota
+escreva ("O valor em R$ é: ",re)
+
+Fimalgoritmo

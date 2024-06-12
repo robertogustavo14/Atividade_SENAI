@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=LSiNBc4NMBYqIkGZcbpC0EPAcJl7PzgidR259-NcKP2mRtDw8Sfgu4z4onSOmpTRlUTybVueZ3pDhFPAfWzVK7iQ8UE9g7tWaB4acXcMCro757u5jzztk3gq5RdvYz5k7UFkTYPAiNMi2nlHBKj5tBEcEBPIdRBmdXX5qogZj2LYGUnAnLNl3M9Sxb10Ij38JrtmUd4B3icXnRsrRTrsvXFYG2MQrrYj9vR6Rl7SxWRUIDhRD0X6jWZFlOkCjItK4b5iKo5mgR9nFixSZujAxyXHjGjkjydT6Xehbs1zUf9-JTbyI0RsuipoB3AkACky0_DZsSqrfcFsiLLGHQ_lT29WjbDn1YDmMBKY94t5sjbNn-WKAsD6zdNjb62e9appPK63Ox4XYeYfC0fIcGIc2BLq0FqE4FAqO3CTQHX0qZGs9gO7lMtZQax67890r_b3eiSzHl3kLrcArF-KX37A_g" charset="UTF-8"></script></head>
+<body>
+    <form action="enviar.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>TAG's do Forms</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" size="15" maxlength="20" placeholder="Digite seu nome">
+            <br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="use caracteres">
+            <br><br>
+            <label for="data">Nascimento</label>
+            <input type="date" name="data" id="data">
+            <br><br>
+            <label for="transporte">Transportes:</label>
+            <br>
+            <input type="checkbox" name="bike" id="bike">
+            <label for="bike">Bicicleta</label> 
+            <br>
+            <input type="checkbox" name="metro" id="metro">
+            <label for="metro">Metro</label>
+            <br>
+            <input type="checkbox" name="skate" id="skate">
+            <label for="skate">Skate</label>
+            <br><br>
+
+            <label for="enquete">Você usa ônibus?</label>            
+            <input type="radio" name="enquete" id="sim">
+            <label for="sim">SIM</label>
+            <input type="radio" name="enquete" id="nao">
+            <label for="nao">NÃO</label>
+            <br><br>
+
+            <label for="bairro">Bairro: </label>
+            <select name="bairro" id="bairro">
+                <option value="" selected>-- Selecione --</option>
+                
+                <option value="centro">Centro</option>                
+                <optgroup label="Noroeste">
+                    <option value="Bonfim">Bonfim</option>
+                    <option value="caicara">Caiçara</option>
+                </optgroup>
+
+                <optgroup label="Nordeste">
+                    <option value="uniao">União</option>
+                    <option value="saoPaulo">São Paulo</option>
+                    <option value="domJoaquim">Dom Joaquim</option>
+                </optgroup>
+
+                <option value="Eldorado">Eldorado</option>
+                <option value="cabana">Cabana</option>
+            </select>
+
+            <label for="sugestoes"></label>
+            <br><br>
+            <textarea name="sugestoes" id="sugestoes" cols="20" rows="5" maxlength="250"></textarea>
+            <br><br>
+
+            <input type="submit" value="Enviar" id="enviar" name="enviar">
+            <input type="reset" value="Limpa">
+            <button type="submit">
+                Enviando
+            </button>            
+        </fieldset>
+    </form>
+</body>
+</html>

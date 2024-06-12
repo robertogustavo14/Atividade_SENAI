@@ -1,0 +1,29 @@
+Algoritmo "02"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 11/11/2020
+procedimento ler
+inicio
+escreval("Digite o valor para a Base:")
+leia(b)
+escreval("Digite o valor para a altura:")
+leia(h)
+fimprocedimento
+funcao area(x,y:real):real
+var
+resu:real
+inicio
+resu<-(x*y)/2
+fimfuncao
+Var
+// Seção de Declarações das variáveis 
+b,h:real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval("Vamos calcular a area de um triangulo")
+ler
+escreval("A area do triangulo é ",area(b,h))
+Fimalgoritmo

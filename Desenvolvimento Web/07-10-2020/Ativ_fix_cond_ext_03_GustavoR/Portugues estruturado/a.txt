@@ -1,0 +1,20 @@
+Algoritmo "Algoritimo pescador"
+Var
+p,m,vare,pm,valor:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ escreval ("nesse programa nos vamos calcular o valor de multa em relação ao excesso")
+ escreval ("Qual é o peso do peixe?(Kg)")
+ leia (p)
+ escreval ("Qual o peso maximo permitido?(Kg)")
+ leia (pm)
+ escreval ("Qual o valor da multa? (R$/Kg)")
+ leia (m)
+ vare <-p - pm
+ se (vare>0) entao
+ valor<- m * vare
+  escreval ("O valor a ser pago de multa é: R$",valor)
+ senao valor <- vare
+escreval ("Não a multa a ser paga.")
+ fimse
+Fimalgoritmo

@@ -1,0 +1,23 @@
+Algoritmo "Programa Senha"
+
+Var
+// Seção de Declarações das variáveis 
+Usuario:caracter
+senha:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Algoritimo simples para acesso de plataforma")
+escreval
+escreva("Escreva seu nome de usuario: ")
+leia(usuario)
+escreva ("Escreva sua senha: ")
+leia (senha)
+     se (usuario = "João")entao
+            se(senha = 1234)então
+            escreva ("Seja Bem Vindo!")
+     fimse
+senao
+escreva ("Acesso Negado")
+fimse
+Fimalgoritmo

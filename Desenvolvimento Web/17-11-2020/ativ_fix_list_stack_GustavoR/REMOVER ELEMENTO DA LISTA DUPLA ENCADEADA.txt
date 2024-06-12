@@ -1,0 +1,35 @@
+Algoritmo "remover elemento da lista dupla encadeada"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 17/11/2020
+procedimento buscarelemento(valor:inteiro)
+var
+   aux:nodo
+   i:inteiro
+   inicio
+         se lista.tamanho=0 entao
+         escreval("lista vazia")
+         senao
+              aux= lista.primeiro
+              para i de 2 ate lista.tamanho passo 1 faca
+              se aux.valor= valor entao
+              interrompa
+   fimse
+        aux=aux.proximo
+        fimpara
+        se aux.valor = valor entao
+        escreval("ëlemento encontrado!")
+   fimse
+   fimse
+   fimprocedimento
+Var
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+
+Fimalgoritmo

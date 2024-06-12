@@ -1,0 +1,30 @@
+Algoritmo "f"
+
+Var
+idade:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("esse algoritmo determina algumas condiçoes para pratica de natação")
+escreval ("Digite a idade usuario")
+leia(idade)
+se (idade>=5) e (idade<=7) entao
+escreval ("Infantil A")
+senao
+se (idade>=8) e (idade<=11) entao
+escreval ("Infantil B")
+senao
+se (idade>=12) e (idade<=13) entao
+escreval ("Juvenil A")
+senao
+se (idade>=14) e (idade<=17) entao
+escreval ("Juvenil B")
+senao
+se (idade>=18) entao
+escreval ("adulto")
+fimse
+fimse
+fimse
+fimse
+fimse
+
+Fimalgoritmo

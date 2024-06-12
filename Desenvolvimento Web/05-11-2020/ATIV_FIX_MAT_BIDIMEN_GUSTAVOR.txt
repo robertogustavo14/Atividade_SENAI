@@ -1,0 +1,61 @@
+Algoritmo "Ativ_fix_mat_bidimen_GustavoR"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 05/11/2020
+Var
+// Seção de Declarações das variáveis 
+dados:vetor[1..6,1..4] de caracter
+i,i2:inteiro
+tro:caracter
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+i<-1
+repita
+escreval ("Registro do ",i,"º Contato")
+escreval("Digite o nome:")
+leia(dados[i,1])
+escreval("Digite o endereço:")
+leia(dados[i,2])
+escreval("Digite o CEP:")
+leia(dados[i,3])
+escreval("Digite o numero do telefone")
+leia(dados[i,4])
+i<-i+1
+limpatela
+ate I>6
+i<-1
+para i de 1 ate 6 faca
+para i2 de i+1 ate 6 faca
+se dados[i,1]>dados[i2,1] entao
+tro<-dados[i,1]
+dados[i,1]<-dados[i2,1]
+dados[i2,1]<-tro
+
+tro<-dados[i,2]
+dados[i,2]<-dados[i2,2]
+dados[i2,2]<-tro
+
+tro<-dados[i,3]
+dados[i,3]<-dados[i2,3]
+dados[i2,3]<-tro
+
+tro<-dados[i,4]
+dados[i,4]<-dados[i2,4]
+dados[i2,4]<-tro
+fimse
+fimpara
+fimpara
+i<-1
+para i de 1 ate 6 faca
+escreval("dados",i,"º contato")
+escreval("nome:",dados[i,1])
+escreval("endereco:",dados[i,2])
+escreval("cep:",dados[i,3])
+escreval("telefone:",dados[i,4])
+escreval("")
+
+fimpara
+
+Fimalgoritmo

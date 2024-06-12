@@ -1,0 +1,38 @@
+Algoritmo "Exercício 10"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 27/10/2020
+Var
+// Seção de Declarações das variáveis 
+a:vetor [1..5] de inteiro
+b:vetor [1..8] de inteiro
+i:inteiro
+pri,seg:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+i<-1
+repita
+escreval ("Valor ",i," do vetor a")
+leia(a[i])
+i<-i+1
+ate i>5
+i<-1
+repita
+escreval ("Valor ",i," do vetor b")
+leia(b[i])
+i<-i+1
+ate i>8
+i<-1
+para pri de 1 ate 5 faca
+para seg de 1 ate 8 faca
+se (a[pri] = b[seg]) entao
+escreval (a[pri]," É um numero repetido.")
+fimse
+fimpara
+fimpara
+
+
+
+Fimalgoritmo

@@ -1,0 +1,41 @@
+Algoritmo "remover elemento da lista"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 17/11/2020
+procedimento remover
+var
+   atual:nodo
+   anterior:nodo
+   i:inteiro
+inicio
+      se lista.tamanho=0 entao
+      escreval("Lista vazia")
+      senao
+           se lista.primeiro.valor=valor entao
+              lista.primeiro:=lista.primeiro.proximo
+              lista.quantidade:=lista.quantidade - 1
+      senao
+          atual:=lista.primeiro
+          anterior := nulo
+          para i de 2 ate lista.quantidade passo 1 faca
+          anterior:= nulo
+          atual:=atual.proximo
+          se (atual.valor = valor) entao
+             anterior.proximo := atual.proximo
+             lista.quantidade := lista.quantidade - 1
+          fimse
+      fimpara
+fimse
+fimse
+fimprocedimento
+Var
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+
+Fimalgoritmo

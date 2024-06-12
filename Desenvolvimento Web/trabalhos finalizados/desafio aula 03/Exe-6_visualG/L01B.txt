@@ -1,0 +1,14 @@
+Algoritmo "L01B"
+
+Var
+f:real
+c:real
+
+Inicio
+Escreval ("Indique a temperatura em Fahrenheit")
+leia (f)
+C <- (F - 32) * (5/9)
+Escreval ("A temperatura em graus celsius é de",c,"ºc")
+
+
+Fimalgoritmo

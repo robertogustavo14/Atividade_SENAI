@@ -1,0 +1,31 @@
+Algoritmo "b"
+
+Var
+num,excesso,valh,preh,prehe,saltotal:real
+hora:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Esse programa calculara o salario de um funcionario.")
+escreval ("Por favor informe o seu codigo de funcionario.")
+leia (num)
+escreval ("Por favor escreva o numero de horas trabalhadas")
+leia(hora)
+escreval ("Qual o valor da sua hora?")
+leia (preh)
+ escreval ("Qual o valor da sua hora extra?")
+leia (prehe)
+
+se (hora>50) entao
+valh <-(hora-(hora-50))*preh
+excesso <-prehe*(hora-50)
+senao
+valh <- hora*preh
+fimse
+saltotal<- valh + excesso
+escreval ("Dados do funcionario:",num)
+escreval ("O valor pela suas horas é:",valh)
+escreval ("O valor pelas suas horas extras é:",excesso)
+escreval ("O valor total do seu salario é",saltotal)
+
+
+Fimalgoritmo

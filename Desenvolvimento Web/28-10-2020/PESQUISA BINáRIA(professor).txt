@@ -1,0 +1,53 @@
+algoritmo "Pesquisa binária"
+ var
+ NOME: vetor[1..10] de caracter
+ i, j, COMECO, FINAL, MEIO: inteiro
+ PESQ, RESP, X: caracter
+ ACHA: logico
+ inicio
+ para i de 1 ate 10 faca
+ leia(NOME[i])
+ fimpara
+ {Ordenação}
+ para i de 1 ate 9 faca
+ para j de i+1 ate 10 faca
+ se (NOME[i] > NOME[j]) entao
+ X <- NOME[i]
+ NOME[i] <- NOME[j]
+ NOME[j] <- X
+   fimse
+ fimpara
+ fimpara
+para i de 1 ate 10 faca
+escreval("NOME[",i,"] = ", NOME[i])
+fimpara
+
+{Pesquisa}
+RESP <- "sim"
+enquanto (RESP= "sim" ) faca
+escreva( "Entre com o nome a ser pesquisado: " )
+leia(PESQ)
+COMECO <- 1
+FINAL <- 10
+ACHA <- falso
+enquanto (COMECO <= FINAL) e (ACHA = falso) faca
+MEIO <- (COMECO + FINAL) div 2
+se (PESQ = NOME[MEIO]) entao
+ACHA <- verdadeiro
+senao
+se (PESQ < NOME[MEIO]) entao
+FINAL <- MEIO - 1
+senao
+COMECO <- MEIO + 1
+fimse
+fimse
+fimenquanto
+se (ACHA = verdadeiro) entao
+escreval(PESQ, " foi localizado na posição ", MEIO)
+senao
+escreval(PESQ, " não foi localizado" )
+fimse
+escreva( "Deseja continuar? " )
+leia(RESP)
+fimenquanto
+fimalgoritmo

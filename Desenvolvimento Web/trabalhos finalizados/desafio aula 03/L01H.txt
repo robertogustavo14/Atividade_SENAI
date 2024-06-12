@@ -1,0 +1,17 @@
+
+Var
+com,lar,alt,vol:real
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   Escreval ("digite o Comprimento do retangulo")
+  leia (com)
+  Escreval ("digite a largura do retangulo")
+  leia (lar)
+  Escreval ("digite altura do retangulo")
+  leia (alt)
+  vol<-com*lar*alt
+  Escreva ("O volume do retangulo é: ",vol)
+Fimalgoritmo

@@ -1,0 +1,17 @@
+Algoritmo "05(B)"
+procedimento ler
+inicio
+escreval("Qual a sua idade?(anos)")
+leia(r)
+fimprocedimento
+funcao idade(x:real):real
+inicio
+r<-(x*365)
+retorne r
+fimfuncao
+Var
+r:real
+Inicio
+ler
+escreval("Resultado: ",idade (r)," dias")
+Fimalgoritmo

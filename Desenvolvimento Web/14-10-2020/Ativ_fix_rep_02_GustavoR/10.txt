@@ -1,0 +1,20 @@
+Algoritmo "10"
+
+Var
+nome:caracter
+num,temp:inteiro
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Quantos nomes deseja inserir?")
+leia (num)
+temp<-1
+repita
+escreval ("Por favor escreva o ", temp , " nome")
+leia (nome)
+escreval (nome)
+temp<-temp+1
+ate num < temp
+Fimalgoritmo

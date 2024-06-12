@@ -1,0 +1,33 @@
+Algoritmo "Exercício 8"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 27/10/2020
+Var
+// Seção de Declarações das variáveis 
+v1:vetor [1..5] de inteiro
+v2:vetor [1..5] de inteiro
+i:inteiro
+mult:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+i<-1
+repita
+escreval("Insira o",i,"º valor")
+leia(v1[i])
+i<-i+1
+ate i>5
+i<-1
+repita
+se (v1[i] > mult) entao
+mult<-v1[i]
+fimse
+i<-i+1
+ate i>5
+i<-1
+repita
+v2[i]<-v1[i]*mult
+i<-i+1
+ate i>5
+Fimalgoritmo

@@ -1,0 +1,52 @@
+Algoritmo "01"
+
+Var
+// Seção de Declarações das variáveis 
+m:vetor[1..5,1..5] de inteiro
+soma,i,j:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para i de 1 ate 5 faca
+para j de 1 ate 5 faca
+escreval("Digite o valor para ser depositado na linha",i," e na coluna",j)
+leia(m[i,j])
+fimpara
+fimpara
+para j de 1 ate 5 faca
+soma<-soma+m[3,j]
+fimpara
+escreval("a)A soma dos produtos da linha 3 é:",soma)
+soma<-0
+para j de 1 ate 5 faca
+soma<-soma+m[j,2]
+fimpara
+escreval("b)A soma dos produtos da coluna 2 é:",soma)
+soma<-0
+i<-1
+j<-1
+repita
+soma<-soma+m[i,j]
+i<-i+1
+j<-j+1
+ate j>5
+escreval("c)A soma da diagonal principal é:",soma)
+
+soma<-0
+i<-1
+j<-5
+repita
+soma<-soma+m[i,j]
+i<-i+1
+j<-j-1
+ate (j<1) e (i>5)
+escreval("d)A soma da diagonal secundaria é:",soma)
+
+
+soma<-0
+para j de 1 ate 5 faca
+para i de 1 ate 5 faca           -
+soma<-soma+m[i,j]
+fimpara
+fimpara
+escreval("e)A soma de todos os elementos é:",soma)
+Fimalgoritmo

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade cores</title>
+    <style>
+        #caixa{
+            background-color: aquamarine;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        .info{
+            width: 30px;
+            text-align: center;
+        }
+        section{
+            align-items: center;
+        }
+        table{margin: 0 auto;}
+    </style>
+</head>
+<body>
+    <section>
+        <table>
+    <tr> <td>   <label for="red">(R) Vermelho:</label>  </td>
+        <td>    <input type="range" id="red" min="0" max="255" value="0" onchange="mudar()"> </td>
+        <td>    <input type="text" class="info" disabled value="0" id="ired">  </td>    </tr>
+
+    <tr> <td> <label for="red">(G) Verde:</label> </td>
+        <td> <input type="range" id="gre" min="0" max="255" value="0" onchange="mudar()" > </td>
+        <td> <input type="text" class="info" disabled value="0" id="igre"> </td>  </tr>
+
+    <tr> <td> <label for="red">(B) Azul:</label>  </td>
+        <td> <input type="range" id="blu" min="0" max="255" value="0" onchange="mudar()"> </td>
+        <td> <input type="text" class="info" disabled value="0" id="iblu"> </td>  </tr>
+    </table>
+<div id="caixa">
+</div>
+</section>
+<script>
+function mudar() {
+    var red = parseInt(document.getElementById("red").value)
+    var gre = parseInt(document.getElementById("gre").value)
+    var blu = parseInt(document.getElementById("blu").value)
+    
+    document.querySelector("#caixa").style.backgroundColor = `rgb(${red},${gre},${blu})`
+    document.querySelector("#ired").value = `${red}`
+    document.querySelector("#igre").value = `${gre}`
+    document.querySelector("#iblu").value = `${blu}`
+    
+}
+
+</script>
+</body>
+</html>

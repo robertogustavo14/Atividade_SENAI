@@ -1,0 +1,55 @@
+Algoritmo "Ativ_fix_EDH_GustavoR"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 30/10/2020
+tipo
+DADOS=registro
+CODIGO:inteiro
+CARGO:caracter
+SAL:real
+fimregistro
+Var
+// Seção de Declarações das variáveis 
+Tabela:vetor[1..17] de DADOS
+i,codigo:inteiro
+resp:caracter
+acha:logico
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para i de 1 ate 17 passo 1 faca
+   Tabela[i].CODIGO<-I
+   escreval("Digite o Código ",Tabela[i].CODIGO)
+   leia(Tabela[i].CODIGO)
+   escreval("Digite o Cargo ",Tabela[i].CARGO)
+   leia(Tabela[i].CARGO)
+   escreval("Digite o valor do salario ",Tabela[i].SAL)
+   leia(Tabela[i].Sal)
+   fimpara
+resp<-"sim"
+enquanto (resp="sim") faca
+escreval("Digite o código para fazer uma pesquisa (1 a 17).")
+leia(codigo)
+i<-1
+acha<-falso
+enquanto (i<=17) e (acha=falso) faca
+se (codigo = Tabela[i].CODIGO) entao
+acha<-verdadeiro
+senao
+i<-i+1
+fimse
+fimenquanto
+
+   se(acha=verdadeiro) entao
+   escreval("Cargo:",Tabela[i].CARGO)
+   escreval("Salario:",Tabela[i].SAL)
+   senao
+   escreval("Cargo INEXISTENTE ")
+   fimse
+   escreval("Deseja continuar a pesquisa?")
+   leia(resp)
+fimenquanto
+
+
+Fimalgoritmo

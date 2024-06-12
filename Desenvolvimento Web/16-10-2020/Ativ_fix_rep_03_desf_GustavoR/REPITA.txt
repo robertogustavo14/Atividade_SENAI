@@ -1,0 +1,28 @@
+Algoritmo "repita"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 16/10/2020
+Var
+x,y,stop,resua,resu,temp:inteiro
+repi:caracter
+Inicio
+cronometro on
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+x<-1
+y<-1
+repita
+stop<-stop+105
+repita
+resu<-x+y
+escreval (x,"+",y,"=",resu)
+x<-y
+y<-resu
+temp<-temp+1
+ate temp>stop
+escreval("Deseja ver mais 105 numeros? (sim)(nao)")
+leia (repi)
+ate repi="nao"
+cronometro off
+Fimalgoritmo

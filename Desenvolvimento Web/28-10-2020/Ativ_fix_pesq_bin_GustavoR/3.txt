@@ -1,0 +1,54 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 28/10/2020
+Var
+// Seção de Declarações das variáveis 
+a,b:vetor [1..30] de real
+i,come,fim,meio,pesq:inteiro
+acha:logico
+pri,seg:inteiro
+tro:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval("Digite os 30 numeros")
+para i de 1 ate 30 faca
+leia (a[i])
+b[i]<-(a[i]^3)
+fimpara
+para pri de 1 ate 30 faca
+para seg de pri+1 ate 30 faca
+se b[pri]>b[seg] entao
+tro<-b[pri]
+b[pri]<-b[seg]
+b[seg]<-tro
+fimse
+fimpara
+fimpara
+escreva("Qual numero deseja buscar?")
+leia(pesq)
+come<-1
+fim<-30
+enquanto (come<=fim) e (acha=falso) faca
+meio<-(come+fim) div 2
+ se (pesq=b[meio]) entao
+ acha<-verdadeiro
+ senao
+ se (pesq<b[meio]) entao
+ fim<-meio-1
+ senao
+ se (pesq>b[meio]) entao
+ come<-meio+1
+ fimse
+ fimse
+ fimse
+fimenquanto
+se (acha=verdadeiro) entao
+escreval(pesq," esta na variavel b[",meio,"]")
+senao
+escreval("resultado nao encontrado")
+fimse
+
+Fimalgoritmo

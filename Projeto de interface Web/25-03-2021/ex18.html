@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 18</title>
+</head>
+<body>
+    <h1>Validador de senha </h1> 
+    <section >
+        <label for="">Digite a senha:</label>
+        <input type="number" id="senha">
+        <button onclick="login()">Login</button>
+        <p id="txt">*Aguardando dados*</p>
+     </div>
+    </section>
+    <script>
+        function login(){
+            var senha = parseInt( document.getElementById("senha").value)
+            var txt = document.getElementById("txt")
+            if(senha === 2002){
+            txt.innerHTML = ("Acesso Permitido")
+        }
+        else{
+            txt.innerHTML = ("Senha invalida") 
+        }
+
+        }
+
+    </script>
+</body>
+</html>

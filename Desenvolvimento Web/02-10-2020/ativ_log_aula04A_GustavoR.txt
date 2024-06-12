@@ -1,0 +1,18 @@
+Algoritmo "exemplo interface amigavel"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Claudio Iwakami
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Gustavo Roberto da silva
+// Data atual  : 02/10/2020
+Var
+   pre_unit,Pro_quant,pre_total:real
+// Seção de Declarações das variáveis 
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   escreva ("digite o valor unitario: ")
+   leia (pre_unit)
+   escreva ("digite a quantidade: ")
+   leia (pro_quant)
+   pre_total <- pre_unit*Pro_quant
+   Escreva ("O valor total da compra é: R$",pre_total)
+Fimalgoritmo

@@ -1,0 +1,18 @@
+Algoritmo "programa Raiz quadrada"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 05/10/2020
+Var
+numero,resultado:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Esse programa informara o valor da raiz quadrada de um numero")
+escreval ("Por favor informe o numero")
+leia (numero)
+resultado <- raizq (numero)
+escreval ("O valor da raiz é:",resultado)
+
+
+Fimalgoritmo

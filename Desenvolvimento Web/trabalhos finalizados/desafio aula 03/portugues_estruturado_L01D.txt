@@ -1,0 +1,16 @@
+Algoritimo para encontrar a quantidade de litros de combustivel, gastos em uma viagem.
+
+Definiremos as seguintes variaveis:
+_tempo, velocidade, distancia, litros_usado:real
+
+Iremos fazer uma requisição ao usuario, para que ele insira o tempo gasto da viagem e a velocidade media durante o percurso.
+
+apos armazenamos os valores nas respequisitvas variaveis, utilizaremos as formulas:
+
+distancia <- velocidade*_tempo
+litros_usado <- distancia / 12
+
+E por fim, mostraremos 4 valores de saida:
+
+A velocidade media, o tempo gasto, a distancia percorrida e a quantidade de litros utilizados na viagem.
+

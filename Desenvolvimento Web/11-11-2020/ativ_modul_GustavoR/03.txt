@@ -1,0 +1,27 @@
+Algoritmo "03"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 11/11/2020
+procedimento ler
+inicio
+escreval("De o valor para N:")
+leia(n)
+fimprocedimento
+funcao cubo(n:real):real
+var
+resu:real
+inicio
+resu<-(n^3)
+fimfuncao
+Var
+// Seção de Declarações das variáveis 
+n:real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval("Vamos calcular um valor ao cubo")
+ler
+escreval(N," ao cubo é ",cubo(n))
+Fimalgoritmo

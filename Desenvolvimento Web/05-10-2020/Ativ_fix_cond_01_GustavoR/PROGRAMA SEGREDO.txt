@@ -1,0 +1,18 @@
+Algoritmo "segredo"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 05/10/2020
+Var
+res:caracter
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Olá quadrupede,voce gostaria de saber um segredo sobre o universo?(SIM/NãO)")
+leia (res)
+se (res="sim") ou (res="Sim") ou (res="SIM") entao
+escreval ("O segredo é:fica tranquilo vai dar tudo errado S2.")
+senao
+escreval ("Certo,continue vivendo uma mentira.")
+fimse
+Fimalgoritmo

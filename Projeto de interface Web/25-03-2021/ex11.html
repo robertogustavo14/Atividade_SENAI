@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        h1{
+            text-align: center;
+        }
+        #div1 {
+            display: flex;
+            justify-content: center;
+            
+        }
+        button{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+   <h1>Doação de sangue </h1> 
+   <h2></h2>
+   <section >
+       <div>
+        <h1 id="doar">Vamos doar sangue?</h1>
+       </div>
+       <div id="div1">
+       <Button onclick="calcular()">Desejo doar sangue</Button>
+    </div>
+   </section>
+   <script>
+       function calcular(){
+           var idade = window.prompt("Digite sua idade")
+           var txt = document.getElementById("doar")
+        if (idade < 18 || idade > 67  ){
+            txt.innerHTML = "Voce nao pode doar sangue :("
+
+        }
+        else {
+            txt.innerHTML = "Voce pode doar sangue :)" 
+        }
+
+       }
+   </script>
+</body>
+</html>

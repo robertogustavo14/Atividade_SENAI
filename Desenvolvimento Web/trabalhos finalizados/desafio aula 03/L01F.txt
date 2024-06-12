@@ -1,0 +1,21 @@
+Algoritmo "L01F"
+
+Var
+a,b,c,d:real
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+EscrevaL ("Insira o valor de A:")
+leia (a)
+Escreval ("insira o valor de B:")
+leia (b)
+
+c <- a
+d <- b
+a <- d
+b <- c
+
+Escreva ("O valor de A é de:",a)
+Escreva ("O valor de B é de:",b)
+Fimalgoritmo

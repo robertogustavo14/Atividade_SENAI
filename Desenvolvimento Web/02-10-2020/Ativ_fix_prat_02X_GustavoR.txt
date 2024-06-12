@@ -1,0 +1,28 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Roberto Da Silva
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 02/10/2020
+Var
+nome,sobrenome:caracter
+nascimento,atual,idade:inteiro
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ escreval ("Porfavor insira seu priemiro nome")
+          leia (nome)
+ escreval ("Porfavor insira seu sobrenome")
+          leia (sobrenome)
+ escreval ("Porfavor escreva seu ano de nascimento")
+          leia (nascimento)
+ escreval ("Em que ano estamos?")
+          leia (atual)
+ idade <- atual-nascimento
+ escreva (nome," ",sobrenome)
+ escreva (" idade:",idade, " anos")
+
+
+Fimalgoritmo

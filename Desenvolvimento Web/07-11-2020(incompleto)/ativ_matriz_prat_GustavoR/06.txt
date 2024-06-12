@@ -1,0 +1,42 @@
+algoritmo "06"
+
+var
+
+   A:vetor [1..12, 1..13] de real
+   i,j:inteiro
+   maior:vetor [1..13] de real
+   
+inicio
+
+   maior[1] <- 0
+   maior[2] <- 0
+   maior[3] <- 0
+   maior[4] <- 0
+   maior[5] <- 0
+   
+   para i de 1 ate 12 passo 1 faca
+      maior[i] <- 0
+      para j de 1 ate 13 passo 1 faca
+         Escreva ("Insira os dados: ")
+            leia (A[i,j])
+         se (A[i,j] > maior[i]) entao
+            maior[i] <- A[i,j]
+         fimse
+      fimpara
+   fimpara
+   
+   para i de 1 ate 12 passo 1 faca
+      para j de 1 ate 13 passo 1 faca
+         A[i,j] <- A[i,j] / maior[i]
+      fimpara
+   fimpara
+   
+   Escreval ("-Matriz depois da divisão-")
+   
+   para i de 1 ate 12 passo 1 faca
+      para j de 1 ate 13 passo 1 faca
+         Escreval (A[i,j])
+      fimpara
+   fimpara
+
+fimalgoritmo

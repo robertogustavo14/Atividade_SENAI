@@ -1,0 +1,31 @@
+Algoritmo "buscar elemento da lista dupla encadeada"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 17/11/2020
+procedimento listardofimaoinicio
+var
+   aux:nodo
+   i;inteiro
+inicio
+      se lista.tamanho> 0 entao
+         aux:=lista.ultimo
+         para i de 2 ate lista.tamanho passo 1 faca
+         escreva(aux.valor)
+         aux=aux.anterior
+         fimpara
+         escreva(aux.valor)
+      senao
+      escreval("lista vazia")
+      fimse
+fimprocedimento
+Var
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+
+Fimalgoritmo

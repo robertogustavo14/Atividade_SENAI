@@ -1,0 +1,22 @@
+Algoritmo "L01D"
+
+Var
+_tempo:real
+velocidade:real
+distancia:real
+litros_usado:real
+Inicio
+Escreva ("Informe o tempo gasto da viagem: ")
+Leia (_tempo)
+Escreval ("Informe a velocidade media ao longo do percurso")
+Leia (velocidade)
+
+distancia <- velocidade*_tempo
+litros_usado <- distancia / 12
+
+Escreval ("A velocidade media foi de",velocidade,"km/h")
+Escreval ("O tempo gasto de viagem foi de",_tempo,"H")
+Escreval ("A distancia percorrida na viagem foi de",distancia,"KM")
+Escreval ("E a quantidade de litros utilizados na viagem foi de",litros_usado," Litros")
+
+Fimalgoritmo

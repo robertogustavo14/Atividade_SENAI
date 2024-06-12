@@ -1,0 +1,17 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 04/10/2020
+Var
+sm,pr,ns:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Por favor escreva o valor do salario mensal")
+leia (sm)
+escreval ("Por favor escreva o valor do porcentual de reajuste(%)")
+leia (pr)
+ns<-sm*(pr/100)
+escreval ("O valor do salario reajustado é: ",ns)
+Fimalgoritmo

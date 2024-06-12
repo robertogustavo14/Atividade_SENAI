@@ -1,0 +1,18 @@
+Algoritmo "g"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 07/10/2020
+Var
+i:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+i<-0
+para i de 100 ate 200 faca
+se i mod 2=1 entao
+escreval (i)
+fimse
+fimpara
+
+Fimalgoritmo

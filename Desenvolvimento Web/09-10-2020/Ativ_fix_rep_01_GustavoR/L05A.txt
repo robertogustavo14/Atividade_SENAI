@@ -1,0 +1,14 @@
+Algoritmo "a"
+
+Var
+// Seção de Declarações das variáveis 
+x,r:real
+cont:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para cont de 15 ate 200 passo 1 faca
+r<-cont^2
+escreva (r)
+fimpara
+
+Fimalgoritmo

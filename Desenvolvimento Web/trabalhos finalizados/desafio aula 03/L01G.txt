@@ -1,0 +1,29 @@
+
+Var
+a,b,c,d,resu1,resu2,resu3,resu4,resu5,resu6,resu7,resu8,resu9,resu10,resu11,resu12:inteiro
+// Seção de Declarações das variáveis
+ 
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreva ("Insira o valor de A: ")
+leia (a)
+escreva ("Insira o valor de B: ")
+leia(b)
+escreva ("Insira o valor de C: ")
+leia(c)
+escreva ("Insira o valor de D: ")
+leia (d)
+resu1<-a*b
+resu2<-a*c
+resu3<-a*d
+resu4<-b*c
+resu5<-b*d
+resu6 <-c*d
+resu7<-a+b
+resu8<-a+c
+resu9<-a+d
+resu10<-b+c
+resu11<-b+d
+resu12<-c+d
+escreva ("Os resultados sao os seguintes:",resu1,resu2,resu3,resu4,resu5,resu6,resu7,resu8,resu9,resu10,resu11,resu12)
+Fimalgoritmo

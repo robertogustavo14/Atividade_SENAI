@@ -1,0 +1,23 @@
+Algoritmo "Lista_Nome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 23/10/2020
+Var
+// Seção de Declarações das variáveis 
+nome:vetor [1..20] de caracter
+i:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para i de 1 ate 20 passo 1 faca
+escreval ("Digite o nome: ")
+leia (nome[i])
+fimpara
+i<-20
+repita
+escreval (nome[i])
+i<-i-1
+ate i=1
+
+Fimalgoritmo

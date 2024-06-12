@@ -1,0 +1,23 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 02/11/2020
+Var
+// Seção de Declarações das variáveis 
+b,h,d:real
+r:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval("Vamos calcular a base,altura e diagonal de um retangulo;")
+escreval("Por favor insira o valor da base:")
+leia(b)
+escreval("Por favor insira o valor da altura:")
+leia(h)
+escreval("A area do retangulo é:",b*h)
+escreval("O perimetro do retangulo é:",2*(b+h))
+d<-(b^2+h^2)
+r<-(raizq (d))
+Fimalgoritmo

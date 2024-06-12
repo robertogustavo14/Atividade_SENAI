@@ -1,0 +1,25 @@
+Algoritmo "Programa media"
+Var
+not1,not2,not3,not4,resu,media,media1:real
+// Seção de Declarações das variáveis 
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("por favor insira a 1º nota (1 a 10)")
+leia (not1)
+escreval ("por favor insira a 2º nota (1 a 10)")
+leia (not2)
+escreval ("por favor insira a 3º nota (1 a 10)")
+leia (not3)
+escreval ("por favor insira a 4º nota (1 a 10)")
+leia (not4)
+escreval ("por favor insira o valor da media(%)")
+leia (media)
+media1<-(media/100)*40
+se (not1+not2+not3+not4>=media1) entao
+escreval ("Aprovado !!!")
+senao
+escreval ("Reprovado :(")
+fimse
+
+Fimalgoritmo

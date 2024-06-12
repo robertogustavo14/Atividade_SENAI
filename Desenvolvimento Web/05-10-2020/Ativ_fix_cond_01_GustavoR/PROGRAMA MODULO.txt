@@ -1,0 +1,20 @@
+Algoritmo "programa modulo"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 05/10/2020
+Var
+n1,n2:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Nesse programa o usuario deve inserir um numero e o resultado sempre deve ser positivo")
+escreval ("Por favor insira o valor")
+leia (n1)
+se (n1<0) entao
+n1<-n1*(-1)
+escreval ("O seu resultado é: ",n1)
+senao
+escreval ("O seu resultado é: ",n1)
+fimse
+Fimalgoritmo

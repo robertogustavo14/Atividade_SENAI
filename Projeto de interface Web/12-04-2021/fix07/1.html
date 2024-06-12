@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+        .fundo{
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clique em mim</h1>
+    <p>Paragrafo 1</p>
+    <p>Paragrafo 2</p>
+    <p>Paragrafo 3</p>
+    <script>
+        let titulo = document.querySelector("h1")
+        let para = document.querySelectorAll("p") 
+        titulo.addEventListener("click", mudar => {
+            for(i in para){
+            para[i].classList.add("fundo")
+            }
+        })
+        
+    </script>
+</body>
+
+</html>

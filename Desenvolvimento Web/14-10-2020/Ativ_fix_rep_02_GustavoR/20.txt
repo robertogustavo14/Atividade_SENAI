@@ -1,0 +1,23 @@
+Algoritmo "20"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 14/10/2020
+Var
+temp,resu:inteiro
+media:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ temp<-50
+repita
+temp<-temp+1
+se temp mod 2 = 0 entao
+resu<-resu+temp
+senao
+fimse
+ate temp=70
+media<-resu/20
+escreval("O resultado da soma é",resu)
+escreval("o valor da media é",media)
+Fimalgoritmo

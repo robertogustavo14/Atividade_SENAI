@@ -1,0 +1,13 @@
+Primeiro é precisor declarar as variaveis:
+
+C:real 
+f:real
+
+Apos a declaração de variaveis, é preciso fazer uma requisição ao usuario.
+A requisição é a temperatura em graus fahrenheint.
+A maquina irá ler o valor inserido pelo usuario.
+
+Iremos colocar a forma para transformar fahrenheint em celsius:
+C <- (F - 32) * (5/9)
+
+E por ultimo, Exibiremos a temperatura convertida em celsius.

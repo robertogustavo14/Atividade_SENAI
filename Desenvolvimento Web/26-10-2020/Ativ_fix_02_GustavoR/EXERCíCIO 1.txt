@@ -1,0 +1,27 @@
+Algoritmo "Exercício 1"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 26/10/2020
+Var
+// Seção de Declarações das variáveis 
+num:vetor [1..10] de inteiro
+i:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+i<-1
+repita
+escreval("DIgite o ",i," numero:")
+leia(num[i])
+i<-i+1
+ate i>10
+i<-1
+repita
+escreval ("O valor do",i," numero é:",num[i])
+i<-i+1
+ate i>10
+
+
+
+Fimalgoritmo

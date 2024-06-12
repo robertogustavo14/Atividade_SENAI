@@ -1,0 +1,36 @@
+Algoritmo "Exercício 5"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 27/10/2020
+Var
+// Seção de Declarações das variáveis 
+pri:vetor [1..20] de inteiro
+cont,cont2:inteiro
+p:inteiro
+i:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+cont<-5000 //Computador nao aguentou 5000 entao fiz com 50 para testar e deu tudo certo.
+cont2<-1
+i<-1
+repita
+   p<-0
+   cont2<-1
+   repita
+
+se (cont mod cont2 = 0) entao
+p<-p+1
+cont2<-cont2+1
+senao
+cont2<-cont2+1
+fimse
+   ate (cont < cont2) ou (p > 2)
+se (p=2) entao
+pri[i]<-cont
+i<-i+1
+fimse
+cont<-cont+1
+ate (pri[20] <> 0)
+Fimalgoritmo

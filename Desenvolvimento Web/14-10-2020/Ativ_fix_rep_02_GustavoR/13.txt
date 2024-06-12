@@ -1,0 +1,19 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :  Claudio Iwakami 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 14/10/2020
+Var
+num,temp,resu:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("A tabuada de qual numero voce deseja?")
+leia(num)
+temp<-1
+repita
+resu<-num*temp
+escreval (num," x ",temp," = ",resu)
+temp<-temp+1
+ate temp>10
+Fimalgoritmo
